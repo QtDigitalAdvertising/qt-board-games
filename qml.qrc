@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>CustomDrawer.qml</file>
+        <file>InterstitialView.qml</file>
+        <file>images/close.png</file>
+        <file>images/menu.png</file>
+        <file>images/builtwithqtrect.png</file>
+        <file>images/builtwithqt.png</file>
+        <file>TicTacToeSquare.qml</file>
+        <file>TicTacToeGame.qml</file>
+        <file>SudokuField.qml</file>
+        <file>SudokuCell.qml</file>
+        <file>SudokuGame.qml</file>
+        <file>RockPaperScissorGame.qml</file>
+        <file>RockPaperScissorScoreBoard.qml</file>
+        <file>RockPaperScissorBadge.qml</file>
+        <file>RockPaperScissor.js</file>
+    </qresource>
+</RCC>
