@@ -3,1698 +3,891 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
-		5E618435888B9D49F8540165 = {
-			buildActionMask = 2147483647;
-			files = (
-				);
-			isa = PBXShellScriptBuildPhase;
-			runOnlyForDeploymentPostprocessing = 0;
-			name = "Qt Qmake";
-			shellPath = "/bin/sh";
-			shellScript = "make -C /Users/octavian.cimpu/QtProjects/qt-board-games -f QtBoardGames.xcodeproj/qt_makeqmake.mak";
-			showEnvVarsInLog = "0";
-		};
-		729E5C506E4CC0F4A8736162 = {
-			isa = PBXFileReference;
-			path = "/Users/octavian.cimpu/QtProjects/qt-board-games/main.cpp";
-			name = "main.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		22949FE5773BB65E14BEC84F = {
-			fileRef = "729E5C506E4CC0F4A8736162";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		9558603AB3AD39A179833FD8 = {
-			isa = PBXFileReference;
-			path = "/Users/octavian.cimpu/QtProjects/qt-board-games/qtboardgames_plugin_import.cpp";
-			name = "qtboardgames_plugin_import.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		7CDA88AD005D51B6A1DCAED4 = {
-			fileRef = "9558603AB3AD39A179833FD8";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		DD5D5C59F791126A99EB32FC = {
-			isa = PBXFileReference;
-			path = "/Users/octavian.cimpu/QtProjects/qt-board-games/qtboardgames_qml_plugin_import.cpp";
-			name = "qtboardgames_qml_plugin_import.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		FBA5729B9482B0C7FA3903D1 = {
-			fileRef = "DD5D5C59F791126A99EB32FC";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		ABB8FFA200E67B848EA350F2 = {
-			isa = PBXFileReference;
-			path = "/Users/octavian.cimpu/QtProjects/qt-board-games/qrc_qml.cpp";
-			name = "qrc_qml.cpp";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "sourcecode.cpp.cpp";
-		};
-		B8B9FA025841B61C321E011D = {
-			fileRef = "ABB8FFA200E67B848EA350F2";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		9C72B8C60C034466F04985E0 = {
-			isa = PBXFileReference;
-			path = "/Users/octavian.cimpu/QtProjects/qt-board-games/qml.qrc";
-			name = "qml.qrc";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "text";
-		};
-		BA16ECFF025443A4F4984CEA = {
-			fileRef = "9C72B8C60C034466F04985E0";
-			isa = PBXBuildFile;
-			settings = {
-				ATTRIBUTES = (
-					);
-			};
-		};
-		116EB6CAE1B3DC400778457A = {
-			isa = PBXFileReference;
-			path = "/Users/octavian.cimpu/QtProjects/qt-board-games/QtBoardGames.pro";
-			name = "QtBoardGames.pro";
-			sourceTree = "<absolute>";
-			lastKnownFileType = "text";
-		};
-		19098B3F2BB38D48F8A665E2 = {
-			isa = PBXFileReference;
-			path = "/Users/octavian.cimpu/QtProjects/qt-board-games/.qmake.stash";
-			name = ".qmake.stash";
-			sourceTree = "<absolute>";
-		};
-		25B08E2869634E9BCBA333A2 = {
-			isa = PBXGroup;
-			children = (
-				"9558603AB3AD39A179833FD8",
-				"DD5D5C59F791126A99EB32FC",
-				"ABB8FFA200E67B848EA350F2");
-			name = "Generated Sources";
-			sourceTree = "<group>";
-		};
-		87DF60DE337FB58864343E39 = {
-			isa = PBXGroup;
-			children = (
-				"9C72B8C60C034466F04985E0");
-			name = "Resources";
-			sourceTree = "<group>";
-		};
-		2EB56BE3C2D93CDAB0C52E67 = {
-			isa = PBXGroup;
-			children = (
-				"729E5C506E4CC0F4A8736162");
-			name = "Sources";
-			sourceTree = "<group>";
-		};
-		74B182DB50CB5611B5C1C297 = {
-			isa = PBXGroup;
-			children = (
-				"116EB6CAE1B3DC400778457A",
-				"19098B3F2BB38D48F8A665E2");
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7EF0942E79C014DCEC8976BC = {
-			buildActionMask = 2147483647;
-			files = (
-				);
-			isa = PBXShellScriptBuildPhase;
-			runOnlyForDeploymentPostprocessing = 0;
-			name = "Qt Preprocessors";
-			inputPaths = (
-				"qml.qrc");
-			outputPaths = (
-				"qrc_qml.cpp");
-			shellPath = "/bin/sh";
-			shellScript = "make -C /Users/octavian.cimpu/QtProjects/qt-board-games -f QtBoardGames.xcodeproj/qt_preprocess.mak";
-			showEnvVarsInLog = "0";
-			alwaysOutOfDate = "1";
-		};
-		F7E50F631C51CD5B5DC0BC43 = {
-			buildActionMask = 2147483647;
-			files = (
-				"22949FE5773BB65E14BEC84F",
-				"7CDA88AD005D51B6A1DCAED4",
-				"FBA5729B9482B0C7FA3903D1",
-				"B8B9FA025841B61C321E011D");
-			isa = PBXSourcesBuildPhase;
-			runOnlyForDeploymentPostprocessing = 0;
-			name = "Compile Sources";
-		};
-		740527D560BED41ABDA1C82C = {
-			isa = PBXFileReference;
-			name = "qios";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/platforms/libqios$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		F09BE4C403DED2BF66895AB5 = {
-			fileRef = "740527D560BED41ABDA1C82C";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		7EC00404ACD5AB0E97726B0E = {
-			isa = PBXFileReference;
-			name = "QuartzCore.framework";
-			path = "/System/Library/Frameworks/QuartzCore.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		B460F624007324313696BE86 = {
-			fileRef = "7EC00404ACD5AB0E97726B0E";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		3C44131FDCFEF4396B9EA2BA = {
-			isa = PBXFileReference;
-			name = "AudioToolbox.framework";
-			path = "/System/Library/Frameworks/AudioToolbox.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		4EB68D0C8182BCE33529C421 = {
-			fileRef = "3C44131FDCFEF4396B9EA2BA";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		704A55464239EDD0DD34E303 = {
-			isa = PBXFileReference;
-			name = "Qt5FontDatabaseSupport";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5FontDatabaseSupport$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		2B8A43A3C5998691258E8A93 = {
-			fileRef = "704A55464239EDD0DD34E303";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		1B4B11C93C8AEF13D3933459 = {
-			isa = PBXFileReference;
-			name = "qtfreetype";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libqtfreetype$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		A6F8AF3DF9D4D30BA768B6F7 = {
-			fileRef = "1B4B11C93C8AEF13D3933459";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		AFFE87AD151F0270E357C705 = {
-			isa = PBXFileReference;
-			name = "Qt5GraphicsSupport";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5GraphicsSupport$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		A3F529887F30167F5C398667 = {
-			fileRef = "AFFE87AD151F0270E357C705";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		F7B138AA093B83CA9994B90C = {
-			isa = PBXFileReference;
-			name = "Qt5ClipboardSupport";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5ClipboardSupport$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		1BAD0820DB02477AC8D9C667 = {
-			fileRef = "F7B138AA093B83CA9994B90C";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		D5B9827F68034EAC0EB19076 = {
-			isa = PBXFileReference;
-			name = "qgif";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqgif$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		09998559D556CE4ABBCFF999 = {
-			fileRef = "D5B9827F68034EAC0EB19076";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		7DE4F6E53E646F1414EBFA0A = {
-			isa = PBXFileReference;
-			name = "qicns";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqicns$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		0A82B1B49B243179149B11C5 = {
-			fileRef = "7DE4F6E53E646F1414EBFA0A";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		3B1F7FD2584F3D61C25621B7 = {
-			isa = PBXFileReference;
-			name = "qico";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqico$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		F6EDC7C928B38866A915E49F = {
-			fileRef = "3B1F7FD2584F3D61C25621B7";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		9EA777FE99ACEC3573CE3760 = {
-			isa = PBXFileReference;
-			name = "qjpeg";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqjpeg$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		8EA6EE7719665A0C431EEA97 = {
-			fileRef = "9EA777FE99ACEC3573CE3760";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		1E3C5AAC65BF6348EF2B7AFD = {
-			isa = PBXFileReference;
-			name = "qtlibjpeg";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libqtlibjpeg$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		1FA39573426404597D5C37E6 = {
-			fileRef = "1E3C5AAC65BF6348EF2B7AFD";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		CA4993CCD2A7F0D82EC25843 = {
-			isa = PBXFileReference;
-			name = "qmacheif";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqmacheif$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		6074F83AC9DEBF1A178B2809 = {
-			fileRef = "CA4993CCD2A7F0D82EC25843";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		4553E53F9D321A11E6214CCE = {
-			isa = PBXFileReference;
-			name = "qmacjp2";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqmacjp2$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		71AC962EC45B9BE3762E8480 = {
-			fileRef = "4553E53F9D321A11E6214CCE";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		3A8EF9C62A8D4790CBB89CEA = {
-			isa = PBXFileReference;
-			name = "ImageIO.framework";
-			path = "/System/Library/Frameworks/ImageIO.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		61EEC397DC8556BF8C4E36A7 = {
-			fileRef = "3A8EF9C62A8D4790CBB89CEA";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		32F538770DE9F6C782284067 = {
-			isa = PBXFileReference;
-			name = "qtga";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqtga$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		DEB8C29E1832B5CD1EE540AA = {
-			fileRef = "32F538770DE9F6C782284067";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		7B633BAD86F5D925DE258F41 = {
-			isa = PBXFileReference;
-			name = "qtiff";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqtiff$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		8F337C8A6568A758CD42D776 = {
-			fileRef = "7B633BAD86F5D925DE258F41";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		F8AB2B0C8E9B6081C9BA7084 = {
-			isa = PBXFileReference;
-			name = "qwbmp";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqwbmp$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		E54F14D8079E2B807952D4B3 = {
-			fileRef = "F8AB2B0C8E9B6081C9BA7084";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		4C904E0DB72EBA29D2F420A1 = {
-			isa = PBXFileReference;
-			name = "qwebp";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqwebp$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		96ED7A634258F9DC12E1F63F = {
-			fileRef = "4C904E0DB72EBA29D2F420A1";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		86FE7B12E111F8B14DBF97BA = {
-			isa = PBXFileReference;
-			name = "qmldbg_debugger";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_debugger$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		95A2029F6D9D57BDB5280354 = {
-			fileRef = "86FE7B12E111F8B14DBF97BA";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		1F1C918D2A533FC7D795C2C7 = {
-			isa = PBXFileReference;
-			name = "qmldbg_inspector";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_inspector$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		4838AEB366A70AD260EF61B5 = {
-			fileRef = "1F1C918D2A533FC7D795C2C7";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		02B3B7C37BDED39261048120 = {
-			isa = PBXFileReference;
-			name = "qmldbg_local";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_local$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		BDB7544707834422FFAE9D59 = {
-			fileRef = "02B3B7C37BDED39261048120";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		4FB30308414DF31579DB03A4 = {
-			isa = PBXFileReference;
-			name = "qmldbg_messages";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_messages$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		F4FC1F35F59E3200D2F9605D = {
-			fileRef = "4FB30308414DF31579DB03A4";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		6A37308790EDE00D8FA43C33 = {
-			isa = PBXFileReference;
-			name = "qmldbg_native";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_native$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		81BB0606F7AC346FA8BDD43E = {
-			fileRef = "6A37308790EDE00D8FA43C33";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		37FCEEBDEA46F4F57FEC1304 = {
-			isa = PBXFileReference;
-			name = "qmldbg_nativedebugger";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_nativedebugger$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		DCEA95782C3C13ABDCD4CC1A = {
-			fileRef = "37FCEEBDEA46F4F57FEC1304";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		C4890A884A6E30CB274D3B86 = {
-			isa = PBXFileReference;
-			name = "qmldbg_preview";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_preview$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		1C347849DEEEFC97FAB9D602 = {
-			fileRef = "C4890A884A6E30CB274D3B86";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		E18B56FBADAB1B23D463291E = {
-			isa = PBXFileReference;
-			name = "qmldbg_profiler";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_profiler$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		C3529FFF9C5598A32F8DFC76 = {
-			fileRef = "E18B56FBADAB1B23D463291E";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		AB73563F4518B23BEEF0C0DF = {
-			isa = PBXFileReference;
-			name = "qmldbg_quickprofiler";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_quickprofiler$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		83D0E9367F2F0E1A869A0268 = {
-			fileRef = "AB73563F4518B23BEEF0C0DF";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		43E559A4E5CA54E6B00F06C8 = {
-			isa = PBXFileReference;
-			name = "qmldbg_server";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_server$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		72C92D327163818C6F474117 = {
-			fileRef = "43E559A4E5CA54E6B00F06C8";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		792189F47DFFFF287DCD7BAD = {
-			isa = PBXFileReference;
-			name = "Qt5PacketProtocol";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5PacketProtocol$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		C35FC23CF40AEEFDAB6FB3D0 = {
-			fileRef = "792189F47DFFFF287DCD7BAD";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		2080B13D39BB58A4D6B62451 = {
-			isa = PBXFileReference;
-			name = "qmldbg_tcp";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_tcp$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		97EEAA3D8AA1DC7C70078D68 = {
-			fileRef = "2080B13D39BB58A4D6B62451";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		FC36CD1F2629FEB98238CEEF = {
-			isa = PBXFileReference;
-			name = "qgenericbearer";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/bearer/libqgenericbearer$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		3C7B39112178EB7CFB8519AD = {
-			fileRef = "FC36CD1F2629FEB98238CEEF";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		5437D00AF99B44AD6B29E7A1 = {
-			isa = PBXFileReference;
-			name = "qmlplugin";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml/libqmlplugin$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		B6792FF5A5F998E1BCF58297 = {
-			fileRef = "5437D00AF99B44AD6B29E7A1";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		4ADB282A178D7E75D6345CD4 = {
-			isa = PBXFileReference;
-			name = "modelsplugin";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml/Models.2/libmodelsplugin$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		D95E67A29D964D6E172F5A15 = {
-			fileRef = "4ADB282A178D7E75D6345CD4";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		4C559EBDB1CB6FB514ABD43A = {
-			isa = PBXFileReference;
-			name = "workerscriptplugin";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml/WorkerScript.2/libworkerscriptplugin$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		C64671A065979E0EFF158DAB = {
-			fileRef = "4C559EBDB1CB6FB514ABD43A";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		D54A4BD33D6CC02E3604811B = {
-			isa = PBXFileReference;
-			name = "DigitalAdvertising";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtDigitalAdvertising/libDigitalAdvertising$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		DDFE1B9A1505055AC18987C8 = {
-			fileRef = "D54A4BD33D6CC02E3604811B";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		DD1BD269FF88F0B1EC4357BD = {
-			isa = PBXFileReference;
-			name = "Qt5WebView";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5WebView$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		C9F427CBD9A4B42F468EFD70 = {
-			fileRef = "DD1BD269FF88F0B1EC4357BD";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		1438BF2C80AE0AE287F53102 = {
-			isa = PBXFileReference;
-			name = "Qt5WebSockets";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5WebSockets$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		BF3E743536F3DA8FB52E7436 = {
-			fileRef = "1438BF2C80AE0AE287F53102";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		BEC9E7EB69569C4FBE3A5839 = {
-			isa = PBXFileReference;
-			name = "declarative_multimedia";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtMultimedia/libdeclarative_multimedia$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		F56AEB1B0D019D77E8ECC83F = {
-			fileRef = "BEC9E7EB69569C4FBE3A5839";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		8EAC6CDABC1272210F1EA658 = {
-			isa = PBXFileReference;
-			name = "Qt5MultimediaQuick";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5MultimediaQuick$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		FEF791111E1E04AA27D595EF = {
-			fileRef = "8EAC6CDABC1272210F1EA658";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		E6A26179EAA679E4FB704507 = {
-			isa = PBXFileReference;
-			name = "Qt5Multimedia";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5Multimedia$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		82784E0CBB02AD3A03102CDA = {
-			fileRef = "E6A26179EAA679E4FB704507";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		3B28168CDF2E205399117B02 = {
-			isa = PBXFileReference;
-			name = "qquicklayoutsplugin";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Layouts/libqquicklayoutsplugin$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		EFEFB59DBAEBD1F4B6D5FD38 = {
-			fileRef = "3B28168CDF2E205399117B02";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		95F5909BFF1F323B8D42E6D8 = {
-			isa = PBXFileReference;
-			name = "qtquicktemplates2plugin";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Templates.2/libqtquicktemplates2plugin$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		02DF0FE71E5B9A9D356DD855 = {
-			fileRef = "95F5909BFF1F323B8D42E6D8";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		97ADF75F2A032EAFEDBED3D4 = {
-			isa = PBXFileReference;
-			name = "qtquickcontrols2plugin";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/libqtquickcontrols2plugin$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		FE6FAE89BF18DA98317F39CC = {
-			fileRef = "97ADF75F2A032EAFEDBED3D4";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		817BE46047BDE53D4405B13A = {
-			isa = PBXFileReference;
-			name = "qqc2materialstyleplugin";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Material/libqqc2materialstyleplugin$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		3BB9EA0C2B17FF00E217D64D = {
-			fileRef = "817BE46047BDE53D4405B13A";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		77225DB6AB605BADC5C231EC = {
-			isa = PBXFileReference;
-			name = "qtquickcontrols2fusionstyleplugin";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Fusion/libqtquickcontrols2fusionstyleplugin$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		BE37102A349519029F4C6764 = {
-			fileRef = "77225DB6AB605BADC5C231EC";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		B630B365F49D3AFF4F7C113C = {
-			isa = PBXFileReference;
-			name = "qtquickcontrols2universalstyleplugin";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Universal/libqtquickcontrols2universalstyleplugin$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		B63ED68E436336658EA7E11A = {
-			fileRef = "B630B365F49D3AFF4F7C113C";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		38DDD5707F12D0B2A8CC2AA3 = {
-			isa = PBXFileReference;
-			name = "qtgraphicaleffectsprivate";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtGraphicalEffects/private/libqtgraphicaleffectsprivate$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		01BADB3003D6284C86EC4E96 = {
-			fileRef = "38DDD5707F12D0B2A8CC2AA3";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		42B6C39EAB359D2F2B9E145E = {
-			isa = PBXFileReference;
-			name = "windowplugin";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Window.2/libwindowplugin$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		265A21E1816641C2951EC6EC = {
-			fileRef = "42B6C39EAB359D2F2B9E145E";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		03CCF3BAE5522654AE369E82 = {
-			isa = PBXFileReference;
-			name = "qtgraphicaleffectsplugin";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtGraphicalEffects/libqtgraphicaleffectsplugin$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		0F3DA959E419814A32719819 = {
-			fileRef = "03CCF3BAE5522654AE369E82";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		9AC9FEEE22A6C96952456AE4 = {
-			isa = PBXFileReference;
-			name = "qtquickcontrols2imaginestyleplugin";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Imagine/libqtquickcontrols2imaginestyleplugin$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		6CC76DE0B9C82F9FF728714E = {
-			fileRef = "9AC9FEEE22A6C96952456AE4";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		29EB75801900C97A38D25CCA = {
-			isa = PBXFileReference;
-			name = "Qt5QuickControls2";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5QuickControls2$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		8E45A1D58AD2DB5BA84A49BB = {
-			fileRef = "29EB75801900C97A38D25CCA";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		B42FD0620906990A50C9D4FC = {
-			isa = PBXFileReference;
-			name = "Qt5QuickTemplates2";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5QuickTemplates2$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		BC35E35DAD82BC5934448F2A = {
-			fileRef = "B42FD0620906990A50C9D4FC";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		BA6B540C5DBA2FE98254F81C = {
-			isa = PBXFileReference;
-			name = "qtquick2plugin";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick.2/libqtquick2plugin$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		644AD70F1E6A984F17FECA9E = {
-			fileRef = "BA6B540C5DBA2FE98254F81C";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		C0728103C197BC4AC582CE7B = {
-			isa = PBXFileReference;
-			name = "Qt5Quick";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5Quick$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		0CAC94343B7C1C5EFC2921D4 = {
-			fileRef = "C0728103C197BC4AC582CE7B";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		78226799D1435894CB99C57D = {
-			isa = PBXFileReference;
-			name = "Qt5QmlModels";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5QmlModels$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		B1BB1EE9CF76A45655138947 = {
-			fileRef = "78226799D1435894CB99C57D";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		C3D79FC742A1F6B5994DB7A3 = {
-			isa = PBXFileReference;
-			name = "Qt5QmlWorkerScript";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5QmlWorkerScript$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		76CD4903CB3FB0FB0B9F06F8 = {
-			fileRef = "C3D79FC742A1F6B5994DB7A3";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		CB8A1C141815D8271B1021BF = {
-			isa = PBXFileReference;
-			name = "Qt5Qml";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5Qml$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		DABB49B9770723BA8CAEB37D = {
-			fileRef = "CB8A1C141815D8271B1021BF";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		9507950BD969F513B7AD2E8A = {
-			isa = PBXFileReference;
-			name = "Qt5Gui";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5Gui$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		14950DA806397A26E1824C14 = {
-			fileRef = "9507950BD969F513B7AD2E8A";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		1B2543FCC48E9436F21C4F63 = {
-			isa = PBXFileReference;
-			name = "Metal.framework";
-			path = "/System/Library/Frameworks/Metal.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		B3FE8FAC746D3D5BB24FA398 = {
-			fileRef = "1B2543FCC48E9436F21C4F63";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		6E9CECEE5D6A2CFE4A98EC3B = {
-			isa = PBXFileReference;
-			name = "qtlibpng";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libqtlibpng$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		4FF6501F8E3875EBB83C5B00 = {
-			fileRef = "6E9CECEE5D6A2CFE4A98EC3B";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		E57B6AE3C9E68E2BD25F14D0 = {
-			isa = PBXFileReference;
-			name = "qtharfbuzz";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libqtharfbuzz$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		6F07EDC92AF54A2B86E8F022 = {
-			fileRef = "E57B6AE3C9E68E2BD25F14D0";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		7D7B02101166B76FD2D4F8B4 = {
-			isa = PBXFileReference;
-			name = "CoreText.framework";
-			path = "/System/Library/Frameworks/CoreText.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		2B02D9DC58A01E45248DDBCE = {
-			fileRef = "7D7B02101166B76FD2D4F8B4";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		6AE3EC31EE5BB1FCEE84137C = {
-			isa = PBXFileReference;
-			name = "CoreGraphics.framework";
-			path = "/System/Library/Frameworks/CoreGraphics.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		0CE02722F00CAD43741297B5 = {
-			fileRef = "6AE3EC31EE5BB1FCEE84137C";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		414EFBCC35CDC0AFB07494E4 = {
-			isa = PBXFileReference;
-			name = "Qt5Network";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5Network$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		C11002D3D186336C12A52FCD = {
-			fileRef = "414EFBCC35CDC0AFB07494E4";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		205259EEEE2BADA5E64741E3 = {
-			isa = PBXFileReference;
-			name = "Security.framework";
-			path = "/System/Library/Frameworks/Security.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		15364689D2AB5A30E87A689F = {
-			fileRef = "205259EEEE2BADA5E64741E3";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		FF5BDAB0076F3391B219EA52 = {
-			isa = PBXFileReference;
-			name = "SystemConfiguration.framework";
-			path = "/System/Library/Frameworks/SystemConfiguration.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		D4639595C3BCF2A39D88DF6E = {
-			fileRef = "FF5BDAB0076F3391B219EA52";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		C714C1AF3FA78E2DABBC17E8 = {
-			isa = PBXFileReference;
-			name = "GSS.framework";
-			path = "/System/Library/Frameworks/GSS.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		906D4B242F504925A3CF2DBB = {
-			fileRef = "C714C1AF3FA78E2DABBC17E8";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		A7D0CCCAD07FC7077E87A88E = {
-			isa = PBXFileReference;
-			name = "Qt5Core";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5Core$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		B6E6CD781821F33E96D9D6A0 = {
-			fileRef = "A7D0CCCAD07FC7077E87A88E";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		4D765E1B1EA6C757220C63E7 = {
-			isa = PBXFileReference;
-			name = "CoreFoundation.framework";
-			path = "/System/Library/Frameworks/CoreFoundation.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		F8B465CE34D8DF87AAE95913 = {
-			fileRef = "4D765E1B1EA6C757220C63E7";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		FCC237CA5AD60B9BA4447615 = {
-			isa = PBXFileReference;
-			name = "Foundation.framework";
-			path = "/System/Library/Frameworks/Foundation.framework";
-			refType = 0;
-			sourceTree = "<absolute>";
-			lastKnownFileType = "wrapper.framework";
-		};
-		F26454630C80841CBDCFE1CA = {
-			fileRef = "FCC237CA5AD60B9BA4447615";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		FFAEAB72D3B222A68D17C052 = {
-			isa = PBXFileReference;
-			name = "qtpcre2";
-			path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libqtpcre2$(QT_LIBRARY_SUFFIX).a";
-			refType = 0;
-			sourceTree = "<absolute>";
-		};
-		D8BF68C38F080A8F3FB0F78C = {
-			fileRef = "FFAEAB72D3B222A68D17C052";
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		AF39DD055C3EF8226FBE929D = {
-			children = (
-				"740527D560BED41ABDA1C82C",
-				"7EC00404ACD5AB0E97726B0E",
-				"3C44131FDCFEF4396B9EA2BA",
-				"704A55464239EDD0DD34E303",
-				"1B4B11C93C8AEF13D3933459",
-				"AFFE87AD151F0270E357C705",
-				"F7B138AA093B83CA9994B90C",
-				"D5B9827F68034EAC0EB19076",
-				"7DE4F6E53E646F1414EBFA0A",
-				"3B1F7FD2584F3D61C25621B7",
-				"9EA777FE99ACEC3573CE3760",
-				"1E3C5AAC65BF6348EF2B7AFD",
-				"CA4993CCD2A7F0D82EC25843",
-				"4553E53F9D321A11E6214CCE",
-				"3A8EF9C62A8D4790CBB89CEA",
-				"32F538770DE9F6C782284067",
-				"7B633BAD86F5D925DE258F41",
-				"F8AB2B0C8E9B6081C9BA7084",
-				"4C904E0DB72EBA29D2F420A1",
-				"86FE7B12E111F8B14DBF97BA",
-				"1F1C918D2A533FC7D795C2C7",
-				"02B3B7C37BDED39261048120",
-				"4FB30308414DF31579DB03A4",
-				"6A37308790EDE00D8FA43C33",
-				"37FCEEBDEA46F4F57FEC1304",
-				"C4890A884A6E30CB274D3B86",
-				"E18B56FBADAB1B23D463291E",
-				"AB73563F4518B23BEEF0C0DF",
-				"43E559A4E5CA54E6B00F06C8",
-				"792189F47DFFFF287DCD7BAD",
-				"2080B13D39BB58A4D6B62451",
-				"FC36CD1F2629FEB98238CEEF",
-				"5437D00AF99B44AD6B29E7A1",
-				"4ADB282A178D7E75D6345CD4",
-				"4C559EBDB1CB6FB514ABD43A",
-				"D54A4BD33D6CC02E3604811B",
-				"DD1BD269FF88F0B1EC4357BD",
-				"1438BF2C80AE0AE287F53102",
-				"BEC9E7EB69569C4FBE3A5839",
-				"8EAC6CDABC1272210F1EA658",
-				"E6A26179EAA679E4FB704507",
-				"3B28168CDF2E205399117B02",
-				"95F5909BFF1F323B8D42E6D8",
-				"97ADF75F2A032EAFEDBED3D4",
-				"817BE46047BDE53D4405B13A",
-				"77225DB6AB605BADC5C231EC",
-				"B630B365F49D3AFF4F7C113C",
-				"38DDD5707F12D0B2A8CC2AA3",
-				"42B6C39EAB359D2F2B9E145E",
-				"03CCF3BAE5522654AE369E82",
-				"9AC9FEEE22A6C96952456AE4",
-				"29EB75801900C97A38D25CCA",
-				"B42FD0620906990A50C9D4FC",
-				"BA6B540C5DBA2FE98254F81C",
-				"C0728103C197BC4AC582CE7B",
-				"78226799D1435894CB99C57D",
-				"C3D79FC742A1F6B5994DB7A3",
-				"CB8A1C141815D8271B1021BF",
-				"9507950BD969F513B7AD2E8A",
-				"1B2543FCC48E9436F21C4F63",
-				"6E9CECEE5D6A2CFE4A98EC3B",
-				"E57B6AE3C9E68E2BD25F14D0",
-				"7D7B02101166B76FD2D4F8B4",
-				"6AE3EC31EE5BB1FCEE84137C",
-				"414EFBCC35CDC0AFB07494E4",
-				"205259EEEE2BADA5E64741E3",
-				"FF5BDAB0076F3391B219EA52",
-				"C714C1AF3FA78E2DABBC17E8",
-				"A7D0CCCAD07FC7077E87A88E",
-				"4D765E1B1EA6C757220C63E7",
-				"FCC237CA5AD60B9BA4447615",
-				"FFAEAB72D3B222A68D17C052");
-			isa = PBXGroup;
-			name = "Frameworks";
-			sourceTree = "<group>";
-		};
-		D1C883685E82D5676953459A = {
-			buildActionMask = 2147483647;
-			files = (
-				"F09BE4C403DED2BF66895AB5",
-				"B460F624007324313696BE86",
-				"4EB68D0C8182BCE33529C421",
-				"2B8A43A3C5998691258E8A93",
-				"A6F8AF3DF9D4D30BA768B6F7",
-				"A3F529887F30167F5C398667",
-				"1BAD0820DB02477AC8D9C667",
-				"09998559D556CE4ABBCFF999",
-				"0A82B1B49B243179149B11C5",
-				"F6EDC7C928B38866A915E49F",
-				"8EA6EE7719665A0C431EEA97",
-				"1FA39573426404597D5C37E6",
-				"6074F83AC9DEBF1A178B2809",
-				"71AC962EC45B9BE3762E8480",
-				"61EEC397DC8556BF8C4E36A7",
-				"DEB8C29E1832B5CD1EE540AA",
-				"8F337C8A6568A758CD42D776",
-				"E54F14D8079E2B807952D4B3",
-				"96ED7A634258F9DC12E1F63F",
-				"95A2029F6D9D57BDB5280354",
-				"4838AEB366A70AD260EF61B5",
-				"BDB7544707834422FFAE9D59",
-				"F4FC1F35F59E3200D2F9605D",
-				"81BB0606F7AC346FA8BDD43E",
-				"DCEA95782C3C13ABDCD4CC1A",
-				"1C347849DEEEFC97FAB9D602",
-				"C3529FFF9C5598A32F8DFC76",
-				"83D0E9367F2F0E1A869A0268",
-				"72C92D327163818C6F474117",
-				"C35FC23CF40AEEFDAB6FB3D0",
-				"97EEAA3D8AA1DC7C70078D68",
-				"3C7B39112178EB7CFB8519AD",
-				"B6792FF5A5F998E1BCF58297",
-				"D95E67A29D964D6E172F5A15",
-				"C64671A065979E0EFF158DAB",
-				"DDFE1B9A1505055AC18987C8",
-				"C9F427CBD9A4B42F468EFD70",
-				"BF3E743536F3DA8FB52E7436",
-				"F56AEB1B0D019D77E8ECC83F",
-				"FEF791111E1E04AA27D595EF",
-				"82784E0CBB02AD3A03102CDA",
-				"EFEFB59DBAEBD1F4B6D5FD38",
-				"02DF0FE71E5B9A9D356DD855",
-				"FE6FAE89BF18DA98317F39CC",
-				"3BB9EA0C2B17FF00E217D64D",
-				"BE37102A349519029F4C6764",
-				"B63ED68E436336658EA7E11A",
-				"01BADB3003D6284C86EC4E96",
-				"265A21E1816641C2951EC6EC",
-				"0F3DA959E419814A32719819",
-				"6CC76DE0B9C82F9FF728714E",
-				"8E45A1D58AD2DB5BA84A49BB",
-				"BC35E35DAD82BC5934448F2A",
-				"644AD70F1E6A984F17FECA9E",
-				"0CAC94343B7C1C5EFC2921D4",
-				"B1BB1EE9CF76A45655138947",
-				"76CD4903CB3FB0FB0B9F06F8",
-				"DABB49B9770723BA8CAEB37D",
-				"14950DA806397A26E1824C14",
-				"B3FE8FAC746D3D5BB24FA398",
-				"4FF6501F8E3875EBB83C5B00",
-				"6F07EDC92AF54A2B86E8F022",
-				"2B02D9DC58A01E45248DDBCE",
-				"0CE02722F00CAD43741297B5",
-				"C11002D3D186336C12A52FCD",
-				"15364689D2AB5A30E87A689F",
-				"D4639595C3BCF2A39D88DF6E",
-				"906D4B242F504925A3CF2DBB",
-				"B6E6CD781821F33E96D9D6A0",
-				"F8B465CE34D8DF87AAE95913",
-				"F26454630C80841CBDCFE1CA",
-				"D8BF68C38F080A8F3FB0F78C");
-			isa = PBXFrameworksBuildPhase;
-			runOnlyForDeploymentPostprocessing = 0;
-			name = "Link Binary With Libraries";
-		};
-		47ED8F5FE0DB130DF2569FC7 = {
-			isa = PBXFileReference;
-			path = "/Users/octavian.cimpu/QtProjects/qt-board-games/QtBoardGames.xcodeproj/Default-568h@2x.png";
-			name = "Default-568h@2x.png";
-			sourceTree = "<absolute>";
-		};
-		9A1307750C1C3E09841AADFB = {
-			fileRef = "47ED8F5FE0DB130DF2569FC7";
-			isa = PBXBuildFile;
-		};
-		F01BD7EB7706AF7B9069522B = {
-			isa = PBXFileReference;
-			path = "/Users/octavian.cimpu/QtProjects/qt-board-games/QtBoardGames.xcodeproj/LaunchScreen.storyboard";
-			name = "LaunchScreen.storyboard";
-			sourceTree = "<absolute>";
-		};
-		3D2C80FC082F153EA1131FF8 = {
-			fileRef = "F01BD7EB7706AF7B9069522B";
-			isa = PBXBuildFile;
-		};
-		858FCAB0EB1F29CF8B07677C = {
-			children = (
-				"47ED8F5FE0DB130DF2569FC7",
-				"F01BD7EB7706AF7B9069522B");
-			isa = PBXGroup;
-			name = "Bundle Data";
-			sourceTree = "<group>";
-		};
-		30414803F31797EB689AE508 = {
-			buildActionMask = 2147483647;
-			files = (
-				"9A1307750C1C3E09841AADFB",
-				"3D2C80FC082F153EA1131FF8");
-			isa = PBXResourcesBuildPhase;
-			runOnlyForDeploymentPostprocessing = 0;
-			name = "Copy Bundle Resources";
-		};
-		99542592E9780B9225F24AA8 = {
+
+/* Begin PBXAggregateTarget section */
+		72754DE7CC5561ADC0DA4934 /* Qt Preprocess */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "QtBoardGames" */;
+			buildPhases = (
+				5E618435888B9D49F8540165 /* Qt Qmake */,
+				7EF0942E79C014DCEC8976BC /* Qt Preprocessors */,
+			);
+			dependencies = (
+			);
+			name = "Qt Preprocess";
+			productName = "Qt Preprocess";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		01BADB3003D6284C86EC4E96 /* qtgraphicaleffectsprivate in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 38DDD5707F12D0B2A8CC2AA3 /* qtgraphicaleffectsprivate */; };
+		02DF0FE71E5B9A9D356DD855 /* qtquicktemplates2plugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 95F5909BFF1F323B8D42E6D8 /* qtquicktemplates2plugin */; };
+		09998559D556CE4ABBCFF999 /* qgif in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D5B9827F68034EAC0EB19076 /* qgif */; };
+		0A82B1B49B243179149B11C5 /* qicns in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 7DE4F6E53E646F1414EBFA0A /* qicns */; };
+		0CAC94343B7C1C5EFC2921D4 /* Qt5Quick in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = C0728103C197BC4AC582CE7B /* Qt5Quick */; };
+		0CE02722F00CAD43741297B5 /* CoreGraphics.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6AE3EC31EE5BB1FCEE84137C /* CoreGraphics.framework */; };
+		0F3DA959E419814A32719819 /* qtgraphicaleffectsplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 03CCF3BAE5522654AE369E82 /* qtgraphicaleffectsplugin */; };
+		14950DA806397A26E1824C14 /* Qt5Gui in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 9507950BD969F513B7AD2E8A /* Qt5Gui */; };
+		15364689D2AB5A30E87A689F /* Security.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 205259EEEE2BADA5E64741E3 /* Security.framework */; };
+		1BAD0820DB02477AC8D9C667 /* Qt5ClipboardSupport in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = F7B138AA093B83CA9994B90C /* Qt5ClipboardSupport */; };
+		1C347849DEEEFC97FAB9D602 /* qmldbg_preview in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = C4890A884A6E30CB274D3B86 /* qmldbg_preview */; };
+		1FA39573426404597D5C37E6 /* qtlibjpeg in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1E3C5AAC65BF6348EF2B7AFD /* qtlibjpeg */; };
+		22949FE5773BB65E14BEC84F /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 729E5C506E4CC0F4A8736162 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		265A21E1816641C2951EC6EC /* windowplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 42B6C39EAB359D2F2B9E145E /* windowplugin */; };
+		2B02D9DC58A01E45248DDBCE /* CoreText.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 7D7B02101166B76FD2D4F8B4 /* CoreText.framework */; };
+		2B8A43A3C5998691258E8A93 /* Qt5FontDatabaseSupport in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 704A55464239EDD0DD34E303 /* Qt5FontDatabaseSupport */; };
+		3BB9EA0C2B17FF00E217D64D /* qqc2materialstyleplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 817BE46047BDE53D4405B13A /* qqc2materialstyleplugin */; };
+		3C7B39112178EB7CFB8519AD /* qgenericbearer in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FC36CD1F2629FEB98238CEEF /* qgenericbearer */; };
+		3D2C80FC082F153EA1131FF8 /* LaunchScreen.storyboard in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = F01BD7EB7706AF7B9069522B /* LaunchScreen.storyboard */; };
+		4838AEB366A70AD260EF61B5 /* qmldbg_inspector in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1F1C918D2A533FC7D795C2C7 /* qmldbg_inspector */; };
+		4EB68D0C8182BCE33529C421 /* AudioToolbox.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3C44131FDCFEF4396B9EA2BA /* AudioToolbox.framework */; };
+		4FF6501F8E3875EBB83C5B00 /* qtlibpng in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6E9CECEE5D6A2CFE4A98EC3B /* qtlibpng */; };
+		6074F83AC9DEBF1A178B2809 /* qmacheif in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = CA4993CCD2A7F0D82EC25843 /* qmacheif */; };
+		61EEC397DC8556BF8C4E36A7 /* ImageIO.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3A8EF9C62A8D4790CBB89CEA /* ImageIO.framework */; };
+		644AD70F1E6A984F17FECA9E /* qtquick2plugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = BA6B540C5DBA2FE98254F81C /* qtquick2plugin */; };
+		6CC76DE0B9C82F9FF728714E /* qtquickcontrols2imaginestyleplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 9AC9FEEE22A6C96952456AE4 /* qtquickcontrols2imaginestyleplugin */; };
+		6F07EDC92AF54A2B86E8F022 /* qtharfbuzz in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = E57B6AE3C9E68E2BD25F14D0 /* qtharfbuzz */; };
+		71AC962EC45B9BE3762E8480 /* qmacjp2 in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4553E53F9D321A11E6214CCE /* qmacjp2 */; };
+		72C92D327163818C6F474117 /* qmldbg_server in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 43E559A4E5CA54E6B00F06C8 /* qmldbg_server */; };
+		76CD4903CB3FB0FB0B9F06F8 /* Qt5QmlWorkerScript in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = C3D79FC742A1F6B5994DB7A3 /* Qt5QmlWorkerScript */; };
+		7CDA88AD005D51B6A1DCAED4 /* qtboardgames_plugin_import.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 9558603AB3AD39A179833FD8 /* qtboardgames_plugin_import.cpp */; settings = {ATTRIBUTES = (); }; };
+		81BB0606F7AC346FA8BDD43E /* qmldbg_native in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 6A37308790EDE00D8FA43C33 /* qmldbg_native */; };
+		82784E0CBB02AD3A03102CDA /* Qt5Multimedia in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = E6A26179EAA679E4FB704507 /* Qt5Multimedia */; };
+		83D0E9367F2F0E1A869A0268 /* qmldbg_quickprofiler in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = AB73563F4518B23BEEF0C0DF /* qmldbg_quickprofiler */; };
+		8AA53D3C282A4D5E00F598D8 /* Images.xcassets in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 8AA53D3B282A4D5E00F598D8 /* Images.xcassets */; };
+		8E45A1D58AD2DB5BA84A49BB /* Qt5QuickControls2 in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 29EB75801900C97A38D25CCA /* Qt5QuickControls2 */; };
+		8EA6EE7719665A0C431EEA97 /* qjpeg in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 9EA777FE99ACEC3573CE3760 /* qjpeg */; };
+		8F337C8A6568A758CD42D776 /* qtiff in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 7B633BAD86F5D925DE258F41 /* qtiff */; };
+		906D4B242F504925A3CF2DBB /* GSS.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = C714C1AF3FA78E2DABBC17E8 /* GSS.framework */; };
+		95A2029F6D9D57BDB5280354 /* qmldbg_debugger in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 86FE7B12E111F8B14DBF97BA /* qmldbg_debugger */; };
+		96ED7A634258F9DC12E1F63F /* qwebp in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4C904E0DB72EBA29D2F420A1 /* qwebp */; };
+		97EEAA3D8AA1DC7C70078D68 /* qmldbg_tcp in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2080B13D39BB58A4D6B62451 /* qmldbg_tcp */; };
+		9A1307750C1C3E09841AADFB /* Default-568h@2x.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 47ED8F5FE0DB130DF2569FC7 /* Default-568h@2x.png */; };
+		A3F529887F30167F5C398667 /* Qt5GraphicsSupport in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = AFFE87AD151F0270E357C705 /* Qt5GraphicsSupport */; };
+		A6F8AF3DF9D4D30BA768B6F7 /* qtfreetype in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1B4B11C93C8AEF13D3933459 /* qtfreetype */; };
+		B1BB1EE9CF76A45655138947 /* Qt5QmlModels in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 78226799D1435894CB99C57D /* Qt5QmlModels */; };
+		B3FE8FAC746D3D5BB24FA398 /* Metal.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1B2543FCC48E9436F21C4F63 /* Metal.framework */; };
+		B460F624007324313696BE86 /* QuartzCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 7EC00404ACD5AB0E97726B0E /* QuartzCore.framework */; };
+		B63ED68E436336658EA7E11A /* qtquickcontrols2universalstyleplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = B630B365F49D3AFF4F7C113C /* qtquickcontrols2universalstyleplugin */; };
+		B6792FF5A5F998E1BCF58297 /* qmlplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 5437D00AF99B44AD6B29E7A1 /* qmlplugin */; };
+		B6E6CD781821F33E96D9D6A0 /* Qt5Core in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A7D0CCCAD07FC7077E87A88E /* Qt5Core */; };
+		B8B9FA025841B61C321E011D /* qrc_qml.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = ABB8FFA200E67B848EA350F2 /* qrc_qml.cpp */; settings = {ATTRIBUTES = (); }; };
+		BC35E35DAD82BC5934448F2A /* Qt5QuickTemplates2 in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = B42FD0620906990A50C9D4FC /* Qt5QuickTemplates2 */; };
+		BDB7544707834422FFAE9D59 /* qmldbg_local in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 02B3B7C37BDED39261048120 /* qmldbg_local */; };
+		BE37102A349519029F4C6764 /* qtquickcontrols2fusionstyleplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 77225DB6AB605BADC5C231EC /* qtquickcontrols2fusionstyleplugin */; };
+		BF3E743536F3DA8FB52E7436 /* Qt5WebSockets in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 1438BF2C80AE0AE287F53102 /* Qt5WebSockets */; };
+		C11002D3D186336C12A52FCD /* Qt5Network in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 414EFBCC35CDC0AFB07494E4 /* Qt5Network */; };
+		C3529FFF9C5598A32F8DFC76 /* qmldbg_profiler in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = E18B56FBADAB1B23D463291E /* qmldbg_profiler */; };
+		C35FC23CF40AEEFDAB6FB3D0 /* Qt5PacketProtocol in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 792189F47DFFFF287DCD7BAD /* Qt5PacketProtocol */; };
+		C64671A065979E0EFF158DAB /* workerscriptplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4C559EBDB1CB6FB514ABD43A /* workerscriptplugin */; };
+		C9F427CBD9A4B42F468EFD70 /* Qt5WebView in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = DD1BD269FF88F0B1EC4357BD /* Qt5WebView */; };
+		D4639595C3BCF2A39D88DF6E /* SystemConfiguration.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FF5BDAB0076F3391B219EA52 /* SystemConfiguration.framework */; };
+		D8BF68C38F080A8F3FB0F78C /* qtpcre2 in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FFAEAB72D3B222A68D17C052 /* qtpcre2 */; };
+		D95E67A29D964D6E172F5A15 /* modelsplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4ADB282A178D7E75D6345CD4 /* modelsplugin */; };
+		DABB49B9770723BA8CAEB37D /* Qt5Qml in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = CB8A1C141815D8271B1021BF /* Qt5Qml */; };
+		DCEA95782C3C13ABDCD4CC1A /* qmldbg_nativedebugger in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 37FCEEBDEA46F4F57FEC1304 /* qmldbg_nativedebugger */; };
+		DDFE1B9A1505055AC18987C8 /* DigitalAdvertising in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D54A4BD33D6CC02E3604811B /* DigitalAdvertising */; };
+		DEB8C29E1832B5CD1EE540AA /* qtga in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 32F538770DE9F6C782284067 /* qtga */; };
+		E54F14D8079E2B807952D4B3 /* qwbmp in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = F8AB2B0C8E9B6081C9BA7084 /* qwbmp */; };
+		EFEFB59DBAEBD1F4B6D5FD38 /* qquicklayoutsplugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3B28168CDF2E205399117B02 /* qquicklayoutsplugin */; };
+		F09BE4C403DED2BF66895AB5 /* qios in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 740527D560BED41ABDA1C82C /* qios */; };
+		F26454630C80841CBDCFE1CA /* Foundation.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FCC237CA5AD60B9BA4447615 /* Foundation.framework */; };
+		F4FC1F35F59E3200D2F9605D /* qmldbg_messages in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4FB30308414DF31579DB03A4 /* qmldbg_messages */; };
+		F56AEB1B0D019D77E8ECC83F /* declarative_multimedia in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = BEC9E7EB69569C4FBE3A5839 /* declarative_multimedia */; };
+		F6EDC7C928B38866A915E49F /* qico in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3B1F7FD2584F3D61C25621B7 /* qico */; };
+		F8B465CE34D8DF87AAE95913 /* CoreFoundation.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 4D765E1B1EA6C757220C63E7 /* CoreFoundation.framework */; };
+		FBA5729B9482B0C7FA3903D1 /* qtboardgames_qml_plugin_import.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = DD5D5C59F791126A99EB32FC /* qtboardgames_qml_plugin_import.cpp */; settings = {ATTRIBUTES = (); }; };
+		FE6FAE89BF18DA98317F39CC /* qtquickcontrols2plugin in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 97ADF75F2A032EAFEDBED3D4 /* qtquickcontrols2plugin */; };
+		FEF791111E1E04AA27D595EF /* Qt5MultimediaQuick in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8EAC6CDABC1272210F1EA658 /* Qt5MultimediaQuick */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AA53D3A282A4BC400F598D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72754DE7CC5561ADC0DA4934;
+			remoteInfo = "Qt Preprocess";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99542592E9780B9225F24AA8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				);
+			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1AB1C29F31D69037EB5214A = {
-			isa = PBXFileReference;
-			includeInIndex = 0;
-			explicitFileType = "wrapper.application";
-			path = "QtBoardGames.app";
-			sourceTree = BUILT_PRODUCTS_DIR;
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02B3B7C37BDED39261048120 /* qmldbg_local */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_local; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_local$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		03CCF3BAE5522654AE369E82 /* qtgraphicaleffectsplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtgraphicaleffectsplugin; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtGraphicalEffects/libqtgraphicaleffectsplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		116EB6CAE1B3DC400778457A /* QtBoardGames.pro */ = {isa = PBXFileReference; lastKnownFileType = text; name = QtBoardGames.pro; path = "/Users/octavian.cimpu/QtProjects/qt-board-games/QtBoardGames.pro"; sourceTree = "<absolute>"; };
+		1438BF2C80AE0AE287F53102 /* Qt5WebSockets */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5WebSockets; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5WebSockets$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		19098B3F2BB38D48F8A665E2 /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = text; name = .qmake.stash; path = "/Users/octavian.cimpu/QtProjects/qt-board-games/.qmake.stash"; sourceTree = "<absolute>"; };
+		1B2543FCC48E9436F21C4F63 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = /System/Library/Frameworks/Metal.framework; sourceTree = "<absolute>"; };
+		1B4B11C93C8AEF13D3933459 /* qtfreetype */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtfreetype; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libqtfreetype$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		1E3C5AAC65BF6348EF2B7AFD /* qtlibjpeg */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtlibjpeg; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libqtlibjpeg$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		1F1C918D2A533FC7D795C2C7 /* qmldbg_inspector */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_inspector; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_inspector$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		205259EEEE2BADA5E64741E3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		2080B13D39BB58A4D6B62451 /* qmldbg_tcp */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_tcp; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_tcp$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		29EB75801900C97A38D25CCA /* Qt5QuickControls2 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5QuickControls2; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5QuickControls2$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		32F538770DE9F6C782284067 /* qtga */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtga; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqtga$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		37FCEEBDEA46F4F57FEC1304 /* qmldbg_nativedebugger */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_nativedebugger; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_nativedebugger$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		38DDD5707F12D0B2A8CC2AA3 /* qtgraphicaleffectsprivate */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtgraphicaleffectsprivate; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtGraphicalEffects/private/libqtgraphicaleffectsprivate$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		3A8EF9C62A8D4790CBB89CEA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = /System/Library/Frameworks/ImageIO.framework; sourceTree = "<absolute>"; };
+		3B1F7FD2584F3D61C25621B7 /* qico */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qico; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqico$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		3B28168CDF2E205399117B02 /* qquicklayoutsplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qquicklayoutsplugin; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Layouts/libqquicklayoutsplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		3C44131FDCFEF4396B9EA2BA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		414EFBCC35CDC0AFB07494E4 /* Qt5Network */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Network; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5Network$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		42B6C39EAB359D2F2B9E145E /* windowplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = windowplugin; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Window.2/libwindowplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		43E559A4E5CA54E6B00F06C8 /* qmldbg_server */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_server; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_server$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		4553E53F9D321A11E6214CCE /* qmacjp2 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmacjp2; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqmacjp2$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		47ED8F5FE0DB130DF2569FC7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "/Users/octavian.cimpu/QtProjects/qt-board-games/QtBoardGames.xcodeproj/Default-568h@2x.png"; sourceTree = "<absolute>"; };
+		4ADB282A178D7E75D6345CD4 /* modelsplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = modelsplugin; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml/Models.2/libmodelsplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		4C559EBDB1CB6FB514ABD43A /* workerscriptplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = workerscriptplugin; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml/WorkerScript.2/libworkerscriptplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		4C904E0DB72EBA29D2F420A1 /* qwebp */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qwebp; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqwebp$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		4D765E1B1EA6C757220C63E7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		4FB30308414DF31579DB03A4 /* qmldbg_messages */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_messages; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_messages$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		5437D00AF99B44AD6B29E7A1 /* qmlplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmlplugin; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml/libqmlplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		6A37308790EDE00D8FA43C33 /* qmldbg_native */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_native; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_native$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		6AE3EC31EE5BB1FCEE84137C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = /System/Library/Frameworks/CoreGraphics.framework; sourceTree = "<absolute>"; };
+		6E9CECEE5D6A2CFE4A98EC3B /* qtlibpng */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtlibpng; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libqtlibpng$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		704A55464239EDD0DD34E303 /* Qt5FontDatabaseSupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5FontDatabaseSupport; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5FontDatabaseSupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		729E5C506E4CC0F4A8736162 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/octavian.cimpu/QtProjects/qt-board-games/main.cpp"; sourceTree = "<absolute>"; };
+		740527D560BED41ABDA1C82C /* qios */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qios; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/platforms/libqios$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		77225DB6AB605BADC5C231EC /* qtquickcontrols2fusionstyleplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtquickcontrols2fusionstyleplugin; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Fusion/libqtquickcontrols2fusionstyleplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		78226799D1435894CB99C57D /* Qt5QmlModels */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5QmlModels; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5QmlModels$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		792189F47DFFFF287DCD7BAD /* Qt5PacketProtocol */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5PacketProtocol; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5PacketProtocol$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		7B633BAD86F5D925DE258F41 /* qtiff */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtiff; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqtiff$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		7D7B02101166B76FD2D4F8B4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = /System/Library/Frameworks/CoreText.framework; sourceTree = "<absolute>"; };
+		7DE4F6E53E646F1414EBFA0A /* qicns */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qicns; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqicns$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		7EC00404ACD5AB0E97726B0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		817BE46047BDE53D4405B13A /* qqc2materialstyleplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qqc2materialstyleplugin; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Material/libqqc2materialstyleplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		86FE7B12E111F8B14DBF97BA /* qmldbg_debugger */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_debugger; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_debugger$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		8AA53D3B282A4D5E00F598D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = QtBoardGames/Images.xcassets; sourceTree = "<group>"; };
+		8EAC6CDABC1272210F1EA658 /* Qt5MultimediaQuick */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5MultimediaQuick; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5MultimediaQuick$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		9507950BD969F513B7AD2E8A /* Qt5Gui */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Gui; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5Gui$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		9558603AB3AD39A179833FD8 /* qtboardgames_plugin_import.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = qtboardgames_plugin_import.cpp; path = "/Users/octavian.cimpu/QtProjects/qt-board-games/qtboardgames_plugin_import.cpp"; sourceTree = "<absolute>"; };
+		95F5909BFF1F323B8D42E6D8 /* qtquicktemplates2plugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtquicktemplates2plugin; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Templates.2/libqtquicktemplates2plugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		97ADF75F2A032EAFEDBED3D4 /* qtquickcontrols2plugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtquickcontrols2plugin; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/libqtquickcontrols2plugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		9AC9FEEE22A6C96952456AE4 /* qtquickcontrols2imaginestyleplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtquickcontrols2imaginestyleplugin; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Imagine/libqtquickcontrols2imaginestyleplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		9C72B8C60C034466F04985E0 /* qml.qrc */ = {isa = PBXFileReference; lastKnownFileType = text; name = qml.qrc; path = "/Users/octavian.cimpu/QtProjects/qt-board-games/qml.qrc"; sourceTree = "<absolute>"; };
+		9EA777FE99ACEC3573CE3760 /* qjpeg */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qjpeg; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqjpeg$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		A7D0CCCAD07FC7077E87A88E /* Qt5Core */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Core; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5Core$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		AB73563F4518B23BEEF0C0DF /* qmldbg_quickprofiler */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_quickprofiler; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_quickprofiler$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		ABB8FFA200E67B848EA350F2 /* qrc_qml.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = qrc_qml.cpp; path = "/Users/octavian.cimpu/QtProjects/qt-board-games/qrc_qml.cpp"; sourceTree = "<absolute>"; };
+		AFFE87AD151F0270E357C705 /* Qt5GraphicsSupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5GraphicsSupport; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5GraphicsSupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		B1AB1C29F31D69037EB5214A /* QtBoardGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QtBoardGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42FD0620906990A50C9D4FC /* Qt5QuickTemplates2 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5QuickTemplates2; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5QuickTemplates2$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		B630B365F49D3AFF4F7C113C /* qtquickcontrols2universalstyleplugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtquickcontrols2universalstyleplugin; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Universal/libqtquickcontrols2universalstyleplugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		BA6B540C5DBA2FE98254F81C /* qtquick2plugin */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtquick2plugin; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick.2/libqtquick2plugin$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		BEC9E7EB69569C4FBE3A5839 /* declarative_multimedia */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = declarative_multimedia; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtMultimedia/libdeclarative_multimedia$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		C0728103C197BC4AC582CE7B /* Qt5Quick */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Quick; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5Quick$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		C3D79FC742A1F6B5994DB7A3 /* Qt5QmlWorkerScript */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5QmlWorkerScript; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5QmlWorkerScript$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		C4890A884A6E30CB274D3B86 /* qmldbg_preview */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_preview; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_preview$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		C714C1AF3FA78E2DABBC17E8 /* GSS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GSS.framework; path = /System/Library/Frameworks/GSS.framework; sourceTree = "<absolute>"; };
+		CA4993CCD2A7F0D82EC25843 /* qmacheif */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmacheif; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqmacheif$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		CB8A1C141815D8271B1021BF /* Qt5Qml */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Qml; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5Qml$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		D54A4BD33D6CC02E3604811B /* DigitalAdvertising */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = DigitalAdvertising; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtDigitalAdvertising/libDigitalAdvertising$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		D5B9827F68034EAC0EB19076 /* qgif */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qgif; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqgif$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		DD1BD269FF88F0B1EC4357BD /* Qt5WebView */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5WebView; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5WebView$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		DD5D5C59F791126A99EB32FC /* qtboardgames_qml_plugin_import.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = qtboardgames_qml_plugin_import.cpp; path = "/Users/octavian.cimpu/QtProjects/qt-board-games/qtboardgames_qml_plugin_import.cpp"; sourceTree = "<absolute>"; };
+		E18B56FBADAB1B23D463291E /* qmldbg_profiler */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qmldbg_profiler; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling/libqmldbg_profiler$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		E57B6AE3C9E68E2BD25F14D0 /* qtharfbuzz */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtharfbuzz; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libqtharfbuzz$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		E6A26179EAA679E4FB704507 /* Qt5Multimedia */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5Multimedia; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5Multimedia$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		F01BD7EB7706AF7B9069522B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "/Users/octavian.cimpu/QtProjects/qt-board-games/QtBoardGames.xcodeproj/LaunchScreen.storyboard"; sourceTree = "<absolute>"; };
+		F7B138AA093B83CA9994B90C /* Qt5ClipboardSupport */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Qt5ClipboardSupport; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libQt5ClipboardSupport$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		F8AB2B0C8E9B6081C9BA7084 /* qwbmp */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qwbmp; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats/libqwbmp$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		FC36CD1F2629FEB98238CEEF /* qgenericbearer */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qgenericbearer; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/bearer/libqgenericbearer$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+		FCC237CA5AD60B9BA4447615 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		FF5BDAB0076F3391B219EA52 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		FFAEAB72D3B222A68D17C052 /* qtpcre2 */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = qtpcre2; path = "/Users/octavian.cimpu/Qt/5.15.9/ios/lib/libqtpcre2$(QT_LIBRARY_SUFFIX).a"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1C883685E82D5676953459A /* Link Binary With Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F09BE4C403DED2BF66895AB5 /* qios in Link Binary With Libraries */,
+				B460F624007324313696BE86 /* QuartzCore.framework in Link Binary With Libraries */,
+				4EB68D0C8182BCE33529C421 /* AudioToolbox.framework in Link Binary With Libraries */,
+				2B8A43A3C5998691258E8A93 /* Qt5FontDatabaseSupport in Link Binary With Libraries */,
+				A6F8AF3DF9D4D30BA768B6F7 /* qtfreetype in Link Binary With Libraries */,
+				A3F529887F30167F5C398667 /* Qt5GraphicsSupport in Link Binary With Libraries */,
+				1BAD0820DB02477AC8D9C667 /* Qt5ClipboardSupport in Link Binary With Libraries */,
+				09998559D556CE4ABBCFF999 /* qgif in Link Binary With Libraries */,
+				0A82B1B49B243179149B11C5 /* qicns in Link Binary With Libraries */,
+				F6EDC7C928B38866A915E49F /* qico in Link Binary With Libraries */,
+				8EA6EE7719665A0C431EEA97 /* qjpeg in Link Binary With Libraries */,
+				1FA39573426404597D5C37E6 /* qtlibjpeg in Link Binary With Libraries */,
+				6074F83AC9DEBF1A178B2809 /* qmacheif in Link Binary With Libraries */,
+				71AC962EC45B9BE3762E8480 /* qmacjp2 in Link Binary With Libraries */,
+				61EEC397DC8556BF8C4E36A7 /* ImageIO.framework in Link Binary With Libraries */,
+				DEB8C29E1832B5CD1EE540AA /* qtga in Link Binary With Libraries */,
+				8F337C8A6568A758CD42D776 /* qtiff in Link Binary With Libraries */,
+				E54F14D8079E2B807952D4B3 /* qwbmp in Link Binary With Libraries */,
+				96ED7A634258F9DC12E1F63F /* qwebp in Link Binary With Libraries */,
+				95A2029F6D9D57BDB5280354 /* qmldbg_debugger in Link Binary With Libraries */,
+				4838AEB366A70AD260EF61B5 /* qmldbg_inspector in Link Binary With Libraries */,
+				BDB7544707834422FFAE9D59 /* qmldbg_local in Link Binary With Libraries */,
+				F4FC1F35F59E3200D2F9605D /* qmldbg_messages in Link Binary With Libraries */,
+				81BB0606F7AC346FA8BDD43E /* qmldbg_native in Link Binary With Libraries */,
+				DCEA95782C3C13ABDCD4CC1A /* qmldbg_nativedebugger in Link Binary With Libraries */,
+				1C347849DEEEFC97FAB9D602 /* qmldbg_preview in Link Binary With Libraries */,
+				C3529FFF9C5598A32F8DFC76 /* qmldbg_profiler in Link Binary With Libraries */,
+				83D0E9367F2F0E1A869A0268 /* qmldbg_quickprofiler in Link Binary With Libraries */,
+				72C92D327163818C6F474117 /* qmldbg_server in Link Binary With Libraries */,
+				C35FC23CF40AEEFDAB6FB3D0 /* Qt5PacketProtocol in Link Binary With Libraries */,
+				97EEAA3D8AA1DC7C70078D68 /* qmldbg_tcp in Link Binary With Libraries */,
+				3C7B39112178EB7CFB8519AD /* qgenericbearer in Link Binary With Libraries */,
+				B6792FF5A5F998E1BCF58297 /* qmlplugin in Link Binary With Libraries */,
+				D95E67A29D964D6E172F5A15 /* modelsplugin in Link Binary With Libraries */,
+				C64671A065979E0EFF158DAB /* workerscriptplugin in Link Binary With Libraries */,
+				DDFE1B9A1505055AC18987C8 /* DigitalAdvertising in Link Binary With Libraries */,
+				C9F427CBD9A4B42F468EFD70 /* Qt5WebView in Link Binary With Libraries */,
+				BF3E743536F3DA8FB52E7436 /* Qt5WebSockets in Link Binary With Libraries */,
+				F56AEB1B0D019D77E8ECC83F /* declarative_multimedia in Link Binary With Libraries */,
+				FEF791111E1E04AA27D595EF /* Qt5MultimediaQuick in Link Binary With Libraries */,
+				82784E0CBB02AD3A03102CDA /* Qt5Multimedia in Link Binary With Libraries */,
+				EFEFB59DBAEBD1F4B6D5FD38 /* qquicklayoutsplugin in Link Binary With Libraries */,
+				02DF0FE71E5B9A9D356DD855 /* qtquicktemplates2plugin in Link Binary With Libraries */,
+				FE6FAE89BF18DA98317F39CC /* qtquickcontrols2plugin in Link Binary With Libraries */,
+				3BB9EA0C2B17FF00E217D64D /* qqc2materialstyleplugin in Link Binary With Libraries */,
+				BE37102A349519029F4C6764 /* qtquickcontrols2fusionstyleplugin in Link Binary With Libraries */,
+				B63ED68E436336658EA7E11A /* qtquickcontrols2universalstyleplugin in Link Binary With Libraries */,
+				01BADB3003D6284C86EC4E96 /* qtgraphicaleffectsprivate in Link Binary With Libraries */,
+				265A21E1816641C2951EC6EC /* windowplugin in Link Binary With Libraries */,
+				0F3DA959E419814A32719819 /* qtgraphicaleffectsplugin in Link Binary With Libraries */,
+				6CC76DE0B9C82F9FF728714E /* qtquickcontrols2imaginestyleplugin in Link Binary With Libraries */,
+				8E45A1D58AD2DB5BA84A49BB /* Qt5QuickControls2 in Link Binary With Libraries */,
+				BC35E35DAD82BC5934448F2A /* Qt5QuickTemplates2 in Link Binary With Libraries */,
+				644AD70F1E6A984F17FECA9E /* qtquick2plugin in Link Binary With Libraries */,
+				0CAC94343B7C1C5EFC2921D4 /* Qt5Quick in Link Binary With Libraries */,
+				B1BB1EE9CF76A45655138947 /* Qt5QmlModels in Link Binary With Libraries */,
+				76CD4903CB3FB0FB0B9F06F8 /* Qt5QmlWorkerScript in Link Binary With Libraries */,
+				DABB49B9770723BA8CAEB37D /* Qt5Qml in Link Binary With Libraries */,
+				14950DA806397A26E1824C14 /* Qt5Gui in Link Binary With Libraries */,
+				B3FE8FAC746D3D5BB24FA398 /* Metal.framework in Link Binary With Libraries */,
+				4FF6501F8E3875EBB83C5B00 /* qtlibpng in Link Binary With Libraries */,
+				6F07EDC92AF54A2B86E8F022 /* qtharfbuzz in Link Binary With Libraries */,
+				2B02D9DC58A01E45248DDBCE /* CoreText.framework in Link Binary With Libraries */,
+				0CE02722F00CAD43741297B5 /* CoreGraphics.framework in Link Binary With Libraries */,
+				C11002D3D186336C12A52FCD /* Qt5Network in Link Binary With Libraries */,
+				15364689D2AB5A30E87A689F /* Security.framework in Link Binary With Libraries */,
+				D4639595C3BCF2A39D88DF6E /* SystemConfiguration.framework in Link Binary With Libraries */,
+				906D4B242F504925A3CF2DBB /* GSS.framework in Link Binary With Libraries */,
+				B6E6CD781821F33E96D9D6A0 /* Qt5Core in Link Binary With Libraries */,
+				F8B465CE34D8DF87AAE95913 /* CoreFoundation.framework in Link Binary With Libraries */,
+				F26454630C80841CBDCFE1CA /* Foundation.framework in Link Binary With Libraries */,
+				D8BF68C38F080A8F3FB0F78C /* qtpcre2 in Link Binary With Libraries */,
+			);
+			name = "Link Binary With Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE0A091FDBFB3E9C31B7A1BD = {
-			children = (
-				"B1AB1C29F31D69037EB5214A");
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25B08E2869634E9BCBA333A2 /* Generated Sources */ = {
 			isa = PBXGroup;
-			name = "Products";
+			children = (
+				9558603AB3AD39A179833FD8 /* qtboardgames_plugin_import.cpp */,
+				DD5D5C59F791126A99EB32FC /* qtboardgames_qml_plugin_import.cpp */,
+				ABB8FFA200E67B848EA350F2 /* qrc_qml.cpp */,
+			);
+			name = "Generated Sources";
 			sourceTree = "<group>";
 		};
-		E8C543AB96796ECAA2E65C57 = {
-			children = (
-				"2EB56BE3C2D93CDAB0C52E67",
-				"25B08E2869634E9BCBA333A2",
-				"87DF60DE337FB58864343E39",
-				"74B182DB50CB5611B5C1C297",
-				"AF39DD055C3EF8226FBE929D",
-				"858FCAB0EB1F29CF8B07677C",
-				"FE0A091FDBFB3E9C31B7A1BD");
+		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
 			isa = PBXGroup;
-			name = "QtBoardGames";
+			children = (
+				729E5C506E4CC0F4A8736162 /* main.cpp */,
+			);
+			name = Sources;
 			sourceTree = "<group>";
 		};
-		72754DE7CC5561ADC0DA4934 = {
-			buildPhases = (
-				"5E618435888B9D49F8540165",
-				"7EF0942E79C014DCEC8976BC");
-			dependencies = (
-				);
-			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59;
-			isa = PBXAggregateTarget;
-			buildRules = (
-);
-			productName = "Qt Preprocess";
-			name = "Qt Preprocess";
+		74B182DB50CB5611B5C1C297 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				116EB6CAE1B3DC400778457A /* QtBoardGames.pro */,
+				19098B3F2BB38D48F8A665E2 /* .qmake.stash */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
 		};
-		A36CCA5A9CB2465915A620AC = {
-			isa = PBXTargetDependency;
-			target = "72754DE7CC5561ADC0DA4934";
+		858FCAB0EB1F29CF8B07677C /* Bundle Data */ = {
+			isa = PBXGroup;
+			children = (
+				47ED8F5FE0DB130DF2569FC7 /* Default-568h@2x.png */,
+				F01BD7EB7706AF7B9069522B /* LaunchScreen.storyboard */,
+			);
+			name = "Bundle Data";
+			sourceTree = "<group>";
 		};
-		06B4FBFB6437B6F47C8122FE = {
-			buildPhases = (
-				"F7E50F631C51CD5B5DC0BC43",
-				"D1C883685E82D5676953459A",
-				"30414803F31797EB689AE508",
-				"99542592E9780B9225F24AA8");
-			dependencies = (
-				"A36CCA5A9CB2465915A620AC");
-			productReference = "B1AB1C29F31D69037EB5214A";
-			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59;
+		87DF60DE337FB58864343E39 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8AA53D3B282A4D5E00F598D8 /* Images.xcassets */,
+				9C72B8C60C034466F04985E0 /* qml.qrc */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AF39DD055C3EF8226FBE929D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				740527D560BED41ABDA1C82C /* qios */,
+				7EC00404ACD5AB0E97726B0E /* QuartzCore.framework */,
+				3C44131FDCFEF4396B9EA2BA /* AudioToolbox.framework */,
+				704A55464239EDD0DD34E303 /* Qt5FontDatabaseSupport */,
+				1B4B11C93C8AEF13D3933459 /* qtfreetype */,
+				AFFE87AD151F0270E357C705 /* Qt5GraphicsSupport */,
+				F7B138AA093B83CA9994B90C /* Qt5ClipboardSupport */,
+				D5B9827F68034EAC0EB19076 /* qgif */,
+				7DE4F6E53E646F1414EBFA0A /* qicns */,
+				3B1F7FD2584F3D61C25621B7 /* qico */,
+				9EA777FE99ACEC3573CE3760 /* qjpeg */,
+				1E3C5AAC65BF6348EF2B7AFD /* qtlibjpeg */,
+				CA4993CCD2A7F0D82EC25843 /* qmacheif */,
+				4553E53F9D321A11E6214CCE /* qmacjp2 */,
+				3A8EF9C62A8D4790CBB89CEA /* ImageIO.framework */,
+				32F538770DE9F6C782284067 /* qtga */,
+				7B633BAD86F5D925DE258F41 /* qtiff */,
+				F8AB2B0C8E9B6081C9BA7084 /* qwbmp */,
+				4C904E0DB72EBA29D2F420A1 /* qwebp */,
+				86FE7B12E111F8B14DBF97BA /* qmldbg_debugger */,
+				1F1C918D2A533FC7D795C2C7 /* qmldbg_inspector */,
+				02B3B7C37BDED39261048120 /* qmldbg_local */,
+				4FB30308414DF31579DB03A4 /* qmldbg_messages */,
+				6A37308790EDE00D8FA43C33 /* qmldbg_native */,
+				37FCEEBDEA46F4F57FEC1304 /* qmldbg_nativedebugger */,
+				C4890A884A6E30CB274D3B86 /* qmldbg_preview */,
+				E18B56FBADAB1B23D463291E /* qmldbg_profiler */,
+				AB73563F4518B23BEEF0C0DF /* qmldbg_quickprofiler */,
+				43E559A4E5CA54E6B00F06C8 /* qmldbg_server */,
+				792189F47DFFFF287DCD7BAD /* Qt5PacketProtocol */,
+				2080B13D39BB58A4D6B62451 /* qmldbg_tcp */,
+				FC36CD1F2629FEB98238CEEF /* qgenericbearer */,
+				5437D00AF99B44AD6B29E7A1 /* qmlplugin */,
+				4ADB282A178D7E75D6345CD4 /* modelsplugin */,
+				4C559EBDB1CB6FB514ABD43A /* workerscriptplugin */,
+				D54A4BD33D6CC02E3604811B /* DigitalAdvertising */,
+				DD1BD269FF88F0B1EC4357BD /* Qt5WebView */,
+				1438BF2C80AE0AE287F53102 /* Qt5WebSockets */,
+				BEC9E7EB69569C4FBE3A5839 /* declarative_multimedia */,
+				8EAC6CDABC1272210F1EA658 /* Qt5MultimediaQuick */,
+				E6A26179EAA679E4FB704507 /* Qt5Multimedia */,
+				3B28168CDF2E205399117B02 /* qquicklayoutsplugin */,
+				95F5909BFF1F323B8D42E6D8 /* qtquicktemplates2plugin */,
+				97ADF75F2A032EAFEDBED3D4 /* qtquickcontrols2plugin */,
+				817BE46047BDE53D4405B13A /* qqc2materialstyleplugin */,
+				77225DB6AB605BADC5C231EC /* qtquickcontrols2fusionstyleplugin */,
+				B630B365F49D3AFF4F7C113C /* qtquickcontrols2universalstyleplugin */,
+				38DDD5707F12D0B2A8CC2AA3 /* qtgraphicaleffectsprivate */,
+				42B6C39EAB359D2F2B9E145E /* windowplugin */,
+				03CCF3BAE5522654AE369E82 /* qtgraphicaleffectsplugin */,
+				9AC9FEEE22A6C96952456AE4 /* qtquickcontrols2imaginestyleplugin */,
+				29EB75801900C97A38D25CCA /* Qt5QuickControls2 */,
+				B42FD0620906990A50C9D4FC /* Qt5QuickTemplates2 */,
+				BA6B540C5DBA2FE98254F81C /* qtquick2plugin */,
+				C0728103C197BC4AC582CE7B /* Qt5Quick */,
+				78226799D1435894CB99C57D /* Qt5QmlModels */,
+				C3D79FC742A1F6B5994DB7A3 /* Qt5QmlWorkerScript */,
+				CB8A1C141815D8271B1021BF /* Qt5Qml */,
+				9507950BD969F513B7AD2E8A /* Qt5Gui */,
+				1B2543FCC48E9436F21C4F63 /* Metal.framework */,
+				6E9CECEE5D6A2CFE4A98EC3B /* qtlibpng */,
+				E57B6AE3C9E68E2BD25F14D0 /* qtharfbuzz */,
+				7D7B02101166B76FD2D4F8B4 /* CoreText.framework */,
+				6AE3EC31EE5BB1FCEE84137C /* CoreGraphics.framework */,
+				414EFBCC35CDC0AFB07494E4 /* Qt5Network */,
+				205259EEEE2BADA5E64741E3 /* Security.framework */,
+				FF5BDAB0076F3391B219EA52 /* SystemConfiguration.framework */,
+				C714C1AF3FA78E2DABBC17E8 /* GSS.framework */,
+				A7D0CCCAD07FC7077E87A88E /* Qt5Core */,
+				4D765E1B1EA6C757220C63E7 /* CoreFoundation.framework */,
+				FCC237CA5AD60B9BA4447615 /* Foundation.framework */,
+				FFAEAB72D3B222A68D17C052 /* qtpcre2 */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8C543AB96796ECAA2E65C57 /* QtBoardGames */ = {
+			isa = PBXGroup;
+			children = (
+				2EB56BE3C2D93CDAB0C52E67 /* Sources */,
+				25B08E2869634E9BCBA333A2 /* Generated Sources */,
+				87DF60DE337FB58864343E39 /* Resources */,
+				74B182DB50CB5611B5C1C297 /* Supporting Files */,
+				AF39DD055C3EF8226FBE929D /* Frameworks */,
+				858FCAB0EB1F29CF8B07677C /* Bundle Data */,
+				FE0A091FDBFB3E9C31B7A1BD /* Products */,
+			);
+			name = QtBoardGames;
+			sourceTree = "<group>";
+		};
+		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1AB1C29F31D69037EB5214A /* QtBoardGames.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06B4FBFB6437B6F47C8122FE /* QtBoardGames */ = {
 			isa = PBXNativeTarget;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "QtBoardGames" */;
+			buildPhases = (
+				F7E50F631C51CD5B5DC0BC43 /* Compile Sources */,
+				D1C883685E82D5676953459A /* Link Binary With Libraries */,
+				30414803F31797EB689AE508 /* Copy Bundle Resources */,
+				99542592E9780B9225F24AA8 /* Embed Frameworks */,
+			);
 			buildRules = (
-);
+			);
+			dependencies = (
+				A36CCA5A9CB2465915A620AC /* PBXTargetDependency */,
+			);
+			name = QtBoardGames;
+			productName = QtBoardGames;
+			productReference = B1AB1C29F31D69037EB5214A /* QtBoardGames.app */;
 			productType = "com.apple.product-type.application";
-			name = "QtBoardGames";
-			productName = "QtBoardGames";
 		};
-		3AA6C32AC930069E80220CF1 = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = "NO";
-				"ARCHS[sdk=iphoneos*]" = "arm64";
-				"ARCHS[sdk=iphonesimulator*]" = "x86_64";
-				COPY_PHASE_STRIP = "NO";
-				DEBUG_INFORMATION_FORMAT = "dwarf";
-				ENABLE_BITCODE = "YES";
-				GCC_OPTIMIZATION_LEVEL = "0";
-				ONLY_ACTIVE_ARCH = "YES";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "QtBoardGames";
-				QMAKE_FULL_VERSION = "1.0.0";
-				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk";
-				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk";
-				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform";
-				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform";
-				QMAKE_PKGINFO_TYPEINFO = "????";
-				QMAKE_SHORT_VERSION = "1.0";
-				QT_LIBRARY_SUFFIX = "_debug";
-				SDKROOT = "iphoneos";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
-				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
-				INFOPLIST_FILE = "Info.plist";
-				SYMROOT = ".xcode";
-				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				DYLIB_CURRENT_VERSION = "1.0.0";
-				DYLIB_COMPATIBILITY_VERSION = "1.0";
-				IPHONEOS_DEPLOYMENT_TARGET = "12.0";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				HEADER_SEARCH_PATHS = (
-					".",
-					"../../Qt/5.15.9/ios/mkspecs/common/uikit",
-					"../../Qt/5.15.9/ios/include",
-					"../../Qt/5.15.9/ios/include/QtQuick",
-					"../../Qt/5.15.9/ios/include/QtGui",
-					"../../Qt/5.15.9/ios/include/QtQmlModels",
-					"../../Qt/5.15.9/ios/include/QtQml",
-					"../../Qt/5.15.9/ios/include/QtNetwork",
-					"../../Qt/5.15.9/ios/include/QtCore",
-					".",
-					"../../Qt/5.15.9/ios/mkspecs/macx-ios-clang");
-				LIBRARY_SEARCH_PATHS = (
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/platforms",
-					"/System/Library/Frameworks/",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/lib",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/bearer",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml/Models.2",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml/WorkerScript.2",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtDigitalAdvertising",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtMultimedia",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Layouts",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Templates.2",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Material",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Fusion",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Universal",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtGraphicalEffects/private",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Window.2",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtGraphicalEffects",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Imagine",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick.2");
-				FRAMEWORK_SEARCH_PATHS = "";
-				OTHER_CFLAGS = (
-					"-pipe",
-					"-g",
-					"-fobjc-nonfragile-abi",
-					"-fobjc-legacy-dispatch",
-					"-Wall",
-					"-Wextra",
-					"-fPIC",
-					"-DQT_COMPILER_SUPPORTS_SSE2",
-					"-DQT_QUICK_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_QMLMODELS_LIB",
-					"-DQT_QML_LIB",
-					"-DQT_NETWORK_LIB",
-					"-DQT_CORE_LIB");
-				OTHER_CPLUSPLUSFLAGS = (
-					"-pipe",
-					"-stdlib=libc++",
-					"-g",
-					"-std=gnu++11",
-					"-fobjc-nonfragile-abi",
-					"-fobjc-legacy-dispatch",
-					"-Wall",
-					"-Wextra",
-					"-fPIC",
-					"-DQT_COMPILER_SUPPORTS_SSE2",
-					"-DQT_QUICK_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_QMLMODELS_LIB",
-					"-DQT_QML_LIB",
-					"-DQT_NETWORK_LIB",
-					"-DQT_CORE_LIB");
-				OTHER_LDFLAGS = (
-						"-stdlib=libc++",
-						"-Wl,-e,_qt_main_wrapper",
-						"-Wl,-rpath,@executable_path/Frameworks",
-						"-L/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/platforms",
-						"-framework",
-						"AssetsLibrary",
-						"-framework",
-						"MobileCoreServices",
-						"-lm",
-						"-framework",
-						"UIKit",
-						"-lz",
-						"-framework",
-						"OpenGLES");
-				ARCHS = "arm64 x86_64";
-			};
-			name = "Debug";
-		};
-		77418F46922677BB04ED38DD = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = "NO";
-				"ARCHS[sdk=iphoneos*]" = "arm64";
-				"ARCHS[sdk=iphonesimulator*]" = "x86_64";
-				COPY_PHASE_STRIP = "NO";
-				DEBUG_INFORMATION_FORMAT = "dwarf";
-				ENABLE_BITCODE = "YES";
-				GCC_OPTIMIZATION_LEVEL = "0";
-				ONLY_ACTIVE_ARCH = "YES";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "QtBoardGames";
-				QMAKE_FULL_VERSION = "1.0.0";
-				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk";
-				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk";
-				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform";
-				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform";
-				QMAKE_PKGINFO_TYPEINFO = "????";
-				QMAKE_SHORT_VERSION = "1.0";
-				QT_LIBRARY_SUFFIX = "_debug";
-				SDKROOT = "iphoneos";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				PRODUCT_NAME = "QtBoardGames";
-			};
-			name = "Debug";
-		};
-		339EE1B2CC4FC24589A0EA95 = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = "NO";
-				"ARCHS[sdk=iphoneos*]" = "arm64";
-				"ARCHS[sdk=iphonesimulator*]" = "x86_64";
-				COPY_PHASE_STRIP = "NO";
-				ENABLE_BITCODE = "YES";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "QtBoardGames";
-				QMAKE_FULL_VERSION = "1.0.0";
-				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk";
-				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk";
-				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform";
-				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform";
-				QMAKE_PKGINFO_TYPEINFO = "????";
-				QMAKE_SHORT_VERSION = "1.0";
-				QT_LIBRARY_SUFFIX = "";
-				SDKROOT = "iphoneos";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				CC = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang";
-				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
-				INFOPLIST_FILE = "Info.plist";
-				SYMROOT = ".xcode";
-				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				DYLIB_CURRENT_VERSION = "1.0.0";
-				DYLIB_COMPATIBILITY_VERSION = "1.0";
-				IPHONEOS_DEPLOYMENT_TARGET = "12.0";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				HEADER_SEARCH_PATHS = (
-					".",
-					"../../Qt/5.15.9/ios/mkspecs/common/uikit",
-					"../../Qt/5.15.9/ios/include",
-					"../../Qt/5.15.9/ios/include/QtQuick",
-					"../../Qt/5.15.9/ios/include/QtGui",
-					"../../Qt/5.15.9/ios/include/QtQmlModels",
-					"../../Qt/5.15.9/ios/include/QtQml",
-					"../../Qt/5.15.9/ios/include/QtNetwork",
-					"../../Qt/5.15.9/ios/include/QtCore",
-					".",
-					"../../Qt/5.15.9/ios/mkspecs/macx-ios-clang");
-				LIBRARY_SEARCH_PATHS = (
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/platforms",
-					"/System/Library/Frameworks/",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/lib",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/bearer",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml/Models.2",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml/WorkerScript.2",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtDigitalAdvertising",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtMultimedia",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Layouts",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Templates.2",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Material",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Fusion",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Universal",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtGraphicalEffects/private",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Window.2",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtGraphicalEffects",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Imagine",
-					"/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick.2");
-				FRAMEWORK_SEARCH_PATHS = "";
-				OTHER_CFLAGS = (
-					"-pipe",
-					"-g",
-					"-fobjc-nonfragile-abi",
-					"-fobjc-legacy-dispatch",
-					"-Wall",
-					"-Wextra",
-					"-fPIC",
-					"-DQT_COMPILER_SUPPORTS_SSE2",
-					"-DQT_QUICK_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_QMLMODELS_LIB",
-					"-DQT_QML_LIB",
-					"-DQT_NETWORK_LIB",
-					"-DQT_CORE_LIB");
-				OTHER_CPLUSPLUSFLAGS = (
-					"-pipe",
-					"-stdlib=libc++",
-					"-g",
-					"-std=gnu++11",
-					"-fobjc-nonfragile-abi",
-					"-fobjc-legacy-dispatch",
-					"-Wall",
-					"-Wextra",
-					"-fPIC",
-					"-DQT_COMPILER_SUPPORTS_SSE2",
-					"-DQT_QUICK_LIB",
-					"-DQT_GUI_LIB",
-					"-DQT_QMLMODELS_LIB",
-					"-DQT_QML_LIB",
-					"-DQT_NETWORK_LIB",
-					"-DQT_CORE_LIB");
-				OTHER_LDFLAGS = (
-						"-stdlib=libc++",
-						"-Wl,-e,_qt_main_wrapper",
-						"-Wl,-rpath,@executable_path/Frameworks",
-						"-L/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/platforms",
-						"-framework",
-						"AssetsLibrary",
-						"-framework",
-						"MobileCoreServices",
-						"-lm",
-						"-framework",
-						"UIKit",
-						"-lz",
-						"-framework",
-						"OpenGLES");
-				ARCHS = "arm64 x86_64";
-			};
-			name = "Release";
-		};
-		6666AA5E688052234F6758D8 = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = "NO";
-				"ARCHS[sdk=iphoneos*]" = "arm64";
-				"ARCHS[sdk=iphonesimulator*]" = "x86_64";
-				COPY_PHASE_STRIP = "NO";
-				ENABLE_BITCODE = "YES";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "QtBoardGames";
-				QMAKE_FULL_VERSION = "1.0.0";
-				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk";
-				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk";
-				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphoneos*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform";
-				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphonesimulator*]" = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform";
-				QMAKE_PKGINFO_TYPEINFO = "????";
-				QMAKE_SHORT_VERSION = "1.0";
-				QT_LIBRARY_SUFFIX = "";
-				SDKROOT = "iphoneos";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				PRODUCT_NAME = "QtBoardGames";
-			};
-			name = "Release";
-		};
-		DAC4C1AA5EDEA1C85E9CA5E6 = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				"3AA6C32AC930069E80220CF1",
-				"339EE1B2CC4FC24589A0EA95");
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Debug";
-		};
-		6CC3B5D2136C7CD6A5CF5A59 = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				"77418F46922677BB04ED38DD",
-				"6666AA5E688052234F6758D8");
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Debug";
-		};
-		6DB9C3763D02B1415CD9D565 = {
-			hasScannedForEncodings = 1;
-			compatibilityVersion = "Xcode 3.2";
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DB9C3763D02B1415CD9D565 /* Project object */ = {
 			isa = PBXProject;
-			mainGroup = "E8C543AB96796ECAA2E65C57";
-			productRefGroup = "FE0A091FDBFB3E9C31B7A1BD";
-			buildConfigurationList = "DAC4C1AA5EDEA1C85E9CA5E6";
+			attributes = {
+			};
+			buildConfigurationList = DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "QtBoardGames" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8C543AB96796ECAA2E65C57 /* QtBoardGames */;
+			productRefGroup = FE0A091FDBFB3E9C31B7A1BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"06B4FBFB6437B6F47C8122FE",
-				"72754DE7CC5561ADC0DA4934");
-			attributes = {
-				TargetAttributes = {
-				};
-			};
+				06B4FBFB6437B6F47C8122FE /* QtBoardGames */,
+				72754DE7CC5561ADC0DA4934 /* Qt Preprocess */,
+			);
 		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30414803F31797EB689AE508 /* Copy Bundle Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AA53D3C282A4D5E00F598D8 /* Images.xcassets in Copy Bundle Resources */,
+				9A1307750C1C3E09841AADFB /* Default-568h@2x.png in Copy Bundle Resources */,
+				3D2C80FC082F153EA1131FF8 /* LaunchScreen.storyboard in Copy Bundle Resources */,
+			);
+			name = "Copy Bundle Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E618435888B9D49F8540165 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/octavian.cimpu/QtProjects/qt-board-games -f QtBoardGames.xcodeproj/qt_makeqmake.mak";
+			showEnvVarsInLog = 0;
+		};
+		7EF0942E79C014DCEC8976BC /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				qml.qrc,
+			);
+			name = "Qt Preprocessors";
+			outputPaths = (
+				qrc_qml.cpp,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/octavian.cimpu/QtProjects/qt-board-games -f QtBoardGames.xcodeproj/qt_preprocess.mak";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7E50F631C51CD5B5DC0BC43 /* Compile Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22949FE5773BB65E14BEC84F /* main.cpp in Compile Sources */,
+				7CDA88AD005D51B6A1DCAED4 /* qtboardgames_plugin_import.cpp in Compile Sources */,
+				FBA5729B9482B0C7FA3903D1 /* qtboardgames_qml_plugin_import.cpp in Compile Sources */,
+				B8B9FA025841B61C321E011D /* qrc_qml.cpp in Compile Sources */,
+			);
+			name = "Compile Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A36CCA5A9CB2465915A620AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72754DE7CC5561ADC0DA4934 /* Qt Preprocess */;
+			targetProxy = 8AA53D3A282A4BC400F598D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		339EE1B2CC4FC24589A0EA95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					.,
+					../../Qt/5.15.9/ios/mkspecs/common/uikit,
+					../../Qt/5.15.9/ios/include,
+					../../Qt/5.15.9/ios/include/QtQuick,
+					../../Qt/5.15.9/ios/include/QtGui,
+					../../Qt/5.15.9/ios/include/QtQmlModels,
+					../../Qt/5.15.9/ios/include/QtQml,
+					../../Qt/5.15.9/ios/include/QtNetwork,
+					../../Qt/5.15.9/ios/include/QtCore,
+					.,
+					"../../Qt/5.15.9/ios/mkspecs/macx-ios-clang",
+				);
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/platforms,
+					/System/Library/Frameworks/,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/lib,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/bearer,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml/Models.2,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml/WorkerScript.2,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtDigitalAdvertising,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtMultimedia,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Layouts,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Templates.2,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Material,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Fusion,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Universal,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtGraphicalEffects/private,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Window.2,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtGraphicalEffects,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Imagine,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick.2,
+				);
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-fobjc-nonfragile-abi",
+					"-fobjc-legacy-dispatch",
+					"-Wall",
+					"-Wextra",
+					"-fPIC",
+					"-DQT_COMPILER_SUPPORTS_SSE2",
+					"-DQT_QUICK_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_QMLMODELS_LIB",
+					"-DQT_QML_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-g",
+					"-std=gnu++11",
+					"-fobjc-nonfragile-abi",
+					"-fobjc-legacy-dispatch",
+					"-Wall",
+					"-Wextra",
+					"-fPIC",
+					"-DQT_COMPILER_SUPPORTS_SSE2",
+					"-DQT_QUICK_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_QMLMODELS_LIB",
+					"-DQT_QML_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-stdlib=libc++",
+					"-Wl,-e,_qt_main_wrapper",
+					"-Wl,-rpath,@executable_path/Frameworks",
+					"-L/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/platforms",
+					"-framework",
+					AssetsLibrary,
+					"-framework",
+					MobileCoreServices,
+					"-lm",
+					"-framework",
+					UIKit,
+					"-lz",
+					"-framework",
+					OpenGLES,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = QtBoardGames;
+				QMAKE_FULL_VERSION = 1.0.0;
+				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk;
+				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk;
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphoneos*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform;
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphonesimulator*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform;
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = 1.0;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = iphoneos;
+				SYMROOT = .xcode;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3AA6C32AC930069E80220CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					.,
+					../../Qt/5.15.9/ios/mkspecs/common/uikit,
+					../../Qt/5.15.9/ios/include,
+					../../Qt/5.15.9/ios/include/QtQuick,
+					../../Qt/5.15.9/ios/include/QtGui,
+					../../Qt/5.15.9/ios/include/QtQmlModels,
+					../../Qt/5.15.9/ios/include/QtQml,
+					../../Qt/5.15.9/ios/include/QtNetwork,
+					../../Qt/5.15.9/ios/include/QtCore,
+					.,
+					"../../Qt/5.15.9/ios/mkspecs/macx-ios-clang",
+				);
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/platforms,
+					/System/Library/Frameworks/,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/lib,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/imageformats,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/qmltooling,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/bearer,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml/Models.2,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQml/WorkerScript.2,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtDigitalAdvertising,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtMultimedia,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Layouts,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Templates.2,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Material,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Fusion,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Universal,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtGraphicalEffects/private,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Window.2,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtGraphicalEffects,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick/Controls.2/Imagine,
+					/Users/octavian.cimpu/Qt/5.15.9/ios/qml/QtQuick.2,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-fobjc-nonfragile-abi",
+					"-fobjc-legacy-dispatch",
+					"-Wall",
+					"-Wextra",
+					"-fPIC",
+					"-DQT_COMPILER_SUPPORTS_SSE2",
+					"-DQT_QUICK_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_QMLMODELS_LIB",
+					"-DQT_QML_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-g",
+					"-std=gnu++11",
+					"-fobjc-nonfragile-abi",
+					"-fobjc-legacy-dispatch",
+					"-Wall",
+					"-Wextra",
+					"-fPIC",
+					"-DQT_COMPILER_SUPPORTS_SSE2",
+					"-DQT_QUICK_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_QMLMODELS_LIB",
+					"-DQT_QML_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-stdlib=libc++",
+					"-Wl,-e,_qt_main_wrapper",
+					"-Wl,-rpath,@executable_path/Frameworks",
+					"-L/Users/octavian.cimpu/Qt/5.15.9/ios/plugins/platforms",
+					"-framework",
+					AssetsLibrary,
+					"-framework",
+					MobileCoreServices,
+					"-lm",
+					"-framework",
+					UIKit,
+					"-lz",
+					"-framework",
+					OpenGLES,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = QtBoardGames;
+				QMAKE_FULL_VERSION = 1.0.0;
+				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk;
+				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk;
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphoneos*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform;
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphonesimulator*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform;
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = 1.0;
+				QT_LIBRARY_SUFFIX = _debug;
+				SDKROOT = iphoneos;
+				SYMROOT = .xcode;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6666AA5E688052234F6758D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = YES;
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = io.qt.boardgames;
+				PRODUCT_NAME = QtBoardGames;
+				QMAKE_FULL_VERSION = 1.0.0;
+				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk;
+				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk;
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphoneos*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform;
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphonesimulator*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform;
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = 1.0;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		77418F46922677BB04ED38DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MARKETING_VERSION = 1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.qt.boardgames;
+				PRODUCT_NAME = QtBoardGames;
+				QMAKE_FULL_VERSION = 1.0.0;
+				"QMAKE_MAC_SDK_PATH[sdk=iphoneos*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk;
+				"QMAKE_MAC_SDK_PATH[sdk=iphonesimulator*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk;
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphoneos*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform;
+				"QMAKE_MAC_SDK_PLATFORM_PATH[sdk=iphonesimulator*]" = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform;
+				QMAKE_PKGINFO_TYPEINFO = "????";
+				QMAKE_SHORT_VERSION = 1.0;
+				QT_LIBRARY_SUFFIX = _debug;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "QtBoardGames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77418F46922677BB04ED38DD /* Debug */,
+				6666AA5E688052234F6758D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "QtBoardGames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA6C32AC930069E80220CF1 /* Debug */,
+				339EE1B2CC4FC24589A0EA95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
 	};
-	rootObject = "6DB9C3763D02B1415CD9D565";
+	rootObject = 6DB9C3763D02B1415CD9D565 /* Project object */;
 }
