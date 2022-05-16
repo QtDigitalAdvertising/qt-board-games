@@ -18,7 +18,7 @@ Item {
         SudokuField {
 
             function setCellWidth(pWidth, num) {
-                return(pWidth - (pWidth % num))/num
+                return (pWidth - (pWidth % num)) / num
             }
 
             id: field2
@@ -26,7 +26,7 @@ Item {
             cellWidth: setCellWidth(parent.width, cellsPerRow)
         }
 
-        height: setMax(parent.height,parent.width) - 200
+        height: parent.width
         width: height
 
     }

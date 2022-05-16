@@ -20,6 +20,12 @@ Item {
             resultLabel.text = RockPaperScissor.getText(myResult) + " does not beat " + RockPaperScissor.getText(computerResult) + ".. You loose!"
             scoreboard.computerScore += 1;
         }
+
+        if ((scoreboard.userScore > 0 || scoreboard.computerScore > 0) && (scoreboard.userScore+scoreboard.computerScore) % 20 == 0) {
+            qt_logo.visible = false
+            toolbar.visible = false
+            stackView.push("InterstitialView.qml")
+        }
     }
 
     ColumnLayout {

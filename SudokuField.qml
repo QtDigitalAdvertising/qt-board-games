@@ -7,13 +7,7 @@ Rectangle {
     property int cellsPerCol: cellsPerRow
     property int cellBorderWidth : 1
 
-    property int cellWidth: {
-        switch (Qt.platform.os) {
-            case "android": return root.width / cellsPerRow
-            case "ios": return root.width / cellsPerRowv
-            default: return 40
-        }
-    }
+    property int cellWidth: 40
 
     property variant puzzle: [
         0,1,5, 6,0,7, 0,3,4,

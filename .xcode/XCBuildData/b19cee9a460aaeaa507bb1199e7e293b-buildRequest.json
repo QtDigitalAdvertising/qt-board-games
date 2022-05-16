@@ -1,8 +1,8 @@
 {
   "_buildCommand2" : {
-    "command" : "prepareForIndexing",
-    "enableIndexBuildArena" : false,
-    "targets" : null
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
   },
   "buildCommand" : "build",
   "configuredTargets" : [
@@ -11,7 +11,7 @@
     }
   ],
   "containerPath" : "/Users/octavian.cimpu/QtProjects/qt-board-games/QtBoardGames.xcodeproj",
-  "continueBuildingAfterErrors" : true,
+  "continueBuildingAfterErrors" : false,
   "enableIndexBuildArena" : false,
   "hideShellScriptEnvironment" : false,
   "parameters" : {
@@ -41,13 +41,13 @@
     "overrides" : {
       "synthesized" : {
         "table" : {
-          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone14,4",
-          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "15.4",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone14,3",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "15.2",
           "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
           "ENABLE_PREVIEWS" : "NO",
-          "TARGET_DEVICE_IDENTIFIER" : "0A564BC2-489E-40F4-927B-C552F10A80EB",
-          "TARGET_DEVICE_MODEL" : "iPhone14,4",
-          "TARGET_DEVICE_OS_VERSION" : "15.4",
+          "TARGET_DEVICE_IDENTIFIER" : "8BC38FAD-38E7-43C4-90FF-B231C246691D",
+          "TARGET_DEVICE_MODEL" : "iPhone14,3",
+          "TARGET_DEVICE_OS_VERSION" : "15.2",
           "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
         }
       }

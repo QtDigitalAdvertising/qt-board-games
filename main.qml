@@ -20,12 +20,12 @@ ApplicationWindow {
     minimumHeight: 750
 
     MobileConfig {
-        qdaApiKey: "<API KEY GOES HERE>"
-        networkId: "4147"
-        siteId: "<SITE ID GOES HERE>"
-        appName: "Board Games"
-        bundleId: "io.qt.games"
-    }
+       qdaApiKey: "<API KEY GOES HERE>"
+       networkId: "4147"
+       siteId: "<SITE ID GOES HERE>"
+       appName: "Board Games"
+       bundleId: "io.qt.boardgames"
+   }
 
     header: ToolBar {
         id: toolbar
