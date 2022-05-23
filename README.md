@@ -1,9 +1,11 @@
 # Board Games written in Qt
 This repository contains the source code of multiple board games showing off the integration with the Qt Digital Advertising library
 
-1. TicTacToe
-2. Sudoku
-3. RockPaperScissors 
+
+TicTacToe           |   Sudoku                       |   RockPaperScissors
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="https://github.com/qt-io/qt-board-games/blob/main/screenshots/XO.png" width="256"/> | <img src="https://github.com/qt-io/qt-board-games/blob/main/screenshots/SDK.png" width="256"/> | <img src="https://github.com/qt-io/qt-board-games/blob/main/screenshots/RPS.png" width="256"/>
+
 
 ## Installation
 
