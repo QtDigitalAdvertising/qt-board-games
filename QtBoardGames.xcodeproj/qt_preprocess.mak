@@ -32,7 +32,7 @@ check: first
 
 benchmark: first
 
-compilers: qrc_qml.cpp
+compilers: qrc_qml.cpp moc_settings.cpp
 compiler_rcc_make_all: qrc_qml.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) qrc_qml.cpp
@@ -40,24 +40,36 @@ qrc_qml.cpp: qml.qrc \
 		../../Qt/5.15.9/ios/bin/rcc \
 		CustomDrawer.qml \
 		SudokuGame.qml \
-		InterstitialView.qml \
+		BallonParticleSystem.qml \
+		BannerAdView.qml \
 		SudokuCell.qml \
 		TicTacToeGame.qml \
 		RockPaperScissorGame.qml \
 		RockPaperScissorScoreBoard.qml \
 		SudokuField.qml \
+		BalloonGame.qml \
+		ConsentDialog.qml \
 		RockPaperScissor.js \
 		RockPaperScissorBadge.qml \
 		main.qml \
+		InterstitialAdView.qml \
 		TicTacToeSquare.qml \
 		images/builtwithqt.png \
 		images/close.png \
 		images/menu.png \
+		images/greenballoon.png \
 		images/builtwithqtrect.png
 	/Users/octavian.cimpu/Qt/5.15.9/ios/bin/rcc -name qml qml.qrc -o qrc_qml.cpp
 
-compiler_moc_header_make_all:
+compiler_moc_header_make_all: moc_settings.cpp
 compiler_moc_header_clean:
+	-$(DEL_FILE) moc_settings.cpp
+moc_settings.cpp: settings.h \
+		../../Qt/5.15.9/ios/include/QtCore/QObject \
+		../../Qt/5.15.9/ios/include/QtCore/QSettings \
+		../../Qt/5.15.9/ios/bin/moc
+	/Users/octavian.cimpu/Qt/5.15.9/ios/bin/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -D__cplusplus=199711L -D__APPLE_CC__=6000 -D__clang__ -D__clang_major__=13 -D__clang_minor__=1 -D__clang_patchlevel__=6 -D__GNUC__=4 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -I/Users/octavian.cimpu/Qt/5.15.9/ios/mkspecs/macx-ios-clang -I/Users/octavian.cimpu/QtProjects/qt-board-games -I/Users/octavian.cimpu/Qt/5.15.9/ios/mkspecs/common/uikit -I/Users/octavian.cimpu/Qt/5.15.9/ios/include -I/Users/octavian.cimpu/Qt/5.15.9/ios/include/QtQuick -I/Users/octavian.cimpu/Qt/5.15.9/ios/include/QtGui -I/Users/octavian.cimpu/Qt/5.15.9/ios/include/QtQmlModels -I/Users/octavian.cimpu/Qt/5.15.9/ios/include/QtQml -I/Users/octavian.cimpu/Qt/5.15.9/ios/include/QtNetwork -I/Users/octavian.cimpu/Qt/5.15.9/ios/include/QtCore -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include settings.h -o moc_settings.cpp
+
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
 compiler_moc_source_make_all:
@@ -70,5 +82,5 @@ compiler_yacc_impl_make_all:
 compiler_yacc_impl_clean:
 compiler_lex_make_all:
 compiler_lex_clean:
-compiler_clean: compiler_rcc_clean 
+compiler_clean: compiler_rcc_clean compiler_moc_header_clean 
 

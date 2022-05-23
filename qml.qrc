@@ -2,11 +2,12 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>CustomDrawer.qml</file>
-        <file>InterstitialView.qml</file>
+        <file>InterstitialAdView.qml</file>
         <file>images/close.png</file>
         <file>images/menu.png</file>
         <file>images/builtwithqtrect.png</file>
         <file>images/builtwithqt.png</file>
+        <file>images/greenballoon.png</file>
         <file>TicTacToeSquare.qml</file>
         <file>TicTacToeGame.qml</file>
         <file>SudokuField.qml</file>
@@ -16,5 +17,9 @@
         <file>RockPaperScissorScoreBoard.qml</file>
         <file>RockPaperScissorBadge.qml</file>
         <file>RockPaperScissor.js</file>
+        <file>BannerAdView.qml</file>
+        <file>ConsentDialog.qml</file>
+        <file>BallonParticleSystem.qml</file>
+        <file>BalloonGame.qml</file>
     </qresource>
 </RCC>

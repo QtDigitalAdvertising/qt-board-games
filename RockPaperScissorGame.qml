@@ -3,7 +3,6 @@ import QtQuick.Window 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.12
 import "RockPaperScissor.js" as RockPaperScissor
-import QtDigitalAdvertising 1.1
 
 Item {
     id: root
@@ -24,7 +23,7 @@ Item {
         if ((scoreboard.userScore > 0 || scoreboard.computerScore > 0) && (scoreboard.userScore+scoreboard.computerScore) % 20 == 0) {
             qt_logo.visible = false
             toolbar.visible = false
-            stackView.push("InterstitialView.qml")
+            stackView.push("InterstitialAdView.qml")
         }
     }
 
@@ -100,34 +99,13 @@ Item {
         Item { Layout.fillHeight: true }
     }
 
-    Rectangle {
-        id: ad1
-        height: 70
-        opacity: 0.1
+    BannerAdView {
+        height: 60
+        Layout.fillWidth: true
         anchors {
             left: parent.left
             right: parent.right
             bottom: parent.bottom
         }
     }
-
-    MobileAd {
-        anchors.centerIn: ad1
-        id: ad2
-        width: root.width / 1.2
-        height: 70
-        playMode: QtDigitalAdvertising.AutoPlay
-        displayMode: QtDigitalAdvertising.Loop
-        pageId: "<PAGE ID GOES HERE>"
-        formatId: "<FORMAT ID GOES HERE>"
-    }
-
-    Component.onCompleted: {
-        // TODO
-    }
-
-    Component.onDestruction: {
-        // TODO
-    }
-
 }

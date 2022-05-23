@@ -1,7 +1,6 @@
-import QtQuick 2.6
-import QtQuick.Window 2.2
-import QtDigitalAdvertising 1.1
-import QtQuick.Controls 2.2
+import QtQuick 2.12
+import QtQuick.Window 2.12
+import QtQuick.Controls 2.12
 import QtQuick.Controls.Material 2.12
 import QtQuick.Controls.Material.impl 2.12
 import QtQuick.Layouts 1.15
@@ -56,7 +55,7 @@ Item {
             games_played = 0
             qt_logo.visible = false
             toolbar.visible = false
-            stackView.push("InterstitialView.qml")
+            stackView.push("InterstitialAdView.qml")
         } else {
             games_played++
         }
@@ -154,34 +153,13 @@ Item {
         }
     }
 
-    Rectangle {
-        id: ad1
-        height: 70
+    BannerAdView {
+        height: 60
         Layout.fillWidth: true
-        opacity: 0.1
         anchors {
             left: parent.left
             right: parent.right
             bottom: parent.bottom
         }
-    }
-
-    MobileAd {
-        anchors.centerIn: ad1
-        id: ad2
-        width: root.width / 1.2
-        height: 70
-        playMode: QtDigitalAdvertising.AutoPlay
-        displayMode: QtDigitalAdvertising.Loop
-        pageId: "<PAGE ID GOES HERE>"
-        formatId: "<FORMAT ID GOES HERE>"
-    }
-
-    Component.onCompleted: {
-        // TODO
-    }
-
-    Component.onDestruction: {
-        // TODO
     }
 }

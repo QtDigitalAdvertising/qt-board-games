@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Qt Preprocess in QtBoardGames, no dependencies
+QtBoardGames in QtBoardGames, depends on:
+Qt Preprocess in QtBoardGames (explicit)

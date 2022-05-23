@@ -87,4 +87,9 @@ dependencies: /Users/octavian.cimpu/QtProjects/qt-board-games/main.cpp \
   ../../Qt/5.15.9/ios/include/QtCore/qiodevice.h \
   ../../Qt/5.15.9/ios/include/QtCore/qset.h \
   ../../Qt/5.15.9/ios/include/QtCore/qcontiguouscache.h \
-  ../../Qt/5.15.9/ios/include/QtQml/qqmlerror.h
+  ../../Qt/5.15.9/ios/include/QtQml/qqmlerror.h \
+  ../../Qt/5.15.9/ios/include/QtQml/QQmlContext \
+  ../../Qt/5.15.9/ios/include/QtQml/qqmlcontext.h \
+  ../../Qt/5.15.9/ios/include/QtCore/QSettings \
+  ../../Qt/5.15.9/ios/include/QtCore/qsettings.h settings.h \
+  ../../Qt/5.15.9/ios/include/QtCore/QObject

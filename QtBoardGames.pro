@@ -3,7 +3,8 @@ TEMPLATE = app
 QT += qml quick
 CONFIG += c++11
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    settings.cpp
 
 RESOURCES += qml.qrc
 android: include(/Users/octavian.cimpu/Library/Android/sdk/android_openssl/openssl.pri)
@@ -21,3 +22,6 @@ DISTFILES += \
 DEPENDS = "qtquickcontrols2"
 
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
+
+HEADERS += \
+    settings.h

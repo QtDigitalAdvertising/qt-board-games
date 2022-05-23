@@ -1,7 +1,9 @@
-import QtQuick 2.0
-import QtQuick.Controls 2.2
+import QtQuick 2.12
+import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.15
+
 Drawer {
+
     id: drawer
 
     ColumnLayout {
@@ -13,16 +15,10 @@ Drawer {
             height: 20
             width: 90
             source: "qrc:/images/builtwithqt.png"
-            anchors {
-                top: parent.top
-                left: drawer.left
-                right: drawer.right
-            }
+            Layout.alignment: Qt.AlignRight | Qt.AlignLeft | Qt.AlignTop
         }
 
-        Item {
-           height:30
-        }
+        Item { height: 30 }
 
         ItemDelegate {
             text: qsTr("TicTacToe Multiplayer")
@@ -51,8 +47,6 @@ Drawer {
             }
         }
 
-        Item{
-           Layout.fillHeight: true
-        }
+        Item {  Layout.fillHeight: true }
     }
 }

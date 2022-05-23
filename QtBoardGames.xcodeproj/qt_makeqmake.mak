@@ -294,16 +294,23 @@ QtBoardGames.xcodeproj/project.pbxproj: QtBoardGames.pro ../../Qt/5.15.9/ios/mks
 		../../Qt/5.15.9/ios/lib/libQt5Qml_debug.prl \
 		../../Qt/5.15.9/ios/lib/libQt5Network_debug.prl \
 		../../Qt/5.15.9/ios/qml/QtQuick.2/libqtquick2plugin_debug.prl \
-		../../Qt/5.15.9/ios/qml/QtQuick/Controls.2/libqtquickcontrols2plugin_debug.prl \
-		../../Qt/5.15.9/ios/qml/QtQuick/Layouts/libqquicklayoutsplugin_debug.prl \
+		../../Qt/5.15.9/ios/qml/QtQuick/Particles.2/libparticlesplugin_debug.prl \
 		../../Qt/5.15.9/ios/qml/QtQml/libqmlplugin_debug.prl \
-		../../Qt/5.15.9/ios/qml/QtQuick/Templates.2/libqtquicktemplates2plugin_debug.prl \
 		../../Qt/5.15.9/ios/qml/QtQml/Models.2/libmodelsplugin_debug.prl \
 		../../Qt/5.15.9/ios/qml/QtQml/WorkerScript.2/libworkerscriptplugin_debug.prl \
+		../../Qt/5.15.9/ios/qml/QtQuick/Layouts/libqquicklayoutsplugin_debug.prl \
 		../../Qt/5.15.9/ios/qml/QtQuick/Window.2/libwindowplugin_debug.prl \
 		../../Qt/5.15.9/ios/qml/QtDigitalAdvertising/libDigitalAdvertising_debug.prl \
+		../../Qt/5.15.9/ios/qml/QtQuick/Controls.2/libqtquickcontrols2plugin_debug.prl \
+		../../Qt/5.15.9/ios/qml/QtQuick/Templates.2/libqtquicktemplates2plugin_debug.prl \
 		../../Qt/5.15.9/ios/qml/QtQuick/Controls.2/Material/libqqc2materialstyleplugin_debug.prl \
 		../../Qt/5.15.9/ios/qml/QtMultimedia/libdeclarative_multimedia_debug.prl \
+		../../Qt/5.15.9/ios/qml/QtQuick/Dialogs/libdialogplugin_debug.prl \
+		../../Qt/5.15.9/ios/qml/Qt/labs/folderlistmodel/libqmlfolderlistmodelplugin_debug.prl \
+		../../Qt/5.15.9/ios/qml/Qt/labs/settings/libqmlsettingsplugin_debug.prl \
+		../../Qt/5.15.9/ios/qml/QtQuick/Dialogs/Private/libdialogsprivateplugin_debug.prl \
+		../../Qt/5.15.9/ios/qml/QtQuick/Controls/libqtquickcontrolsplugin_debug.prl \
+		../../Qt/5.15.9/ios/qml/QtQuick/PrivateWidgets/libwidgetsplugin_debug.prl \
 		../../Qt/5.15.9/ios/qml/QtQuick/Controls.2/Fusion/libqtquickcontrols2fusionstyleplugin_debug.prl \
 		../../Qt/5.15.9/ios/qml/QtQuick/Controls.2/Universal/libqtquickcontrols2universalstyleplugin_debug.prl \
 		../../Qt/5.15.9/ios/qml/QtQuick/Controls.2/Imagine/libqtquickcontrols2imaginestyleplugin_debug.prl \
@@ -594,16 +601,23 @@ qml.qrc:
 ../../Qt/5.15.9/ios/lib/libQt5Qml_debug.prl:
 ../../Qt/5.15.9/ios/lib/libQt5Network_debug.prl:
 ../../Qt/5.15.9/ios/qml/QtQuick.2/libqtquick2plugin_debug.prl:
-../../Qt/5.15.9/ios/qml/QtQuick/Controls.2/libqtquickcontrols2plugin_debug.prl:
-../../Qt/5.15.9/ios/qml/QtQuick/Layouts/libqquicklayoutsplugin_debug.prl:
+../../Qt/5.15.9/ios/qml/QtQuick/Particles.2/libparticlesplugin_debug.prl:
 ../../Qt/5.15.9/ios/qml/QtQml/libqmlplugin_debug.prl:
-../../Qt/5.15.9/ios/qml/QtQuick/Templates.2/libqtquicktemplates2plugin_debug.prl:
 ../../Qt/5.15.9/ios/qml/QtQml/Models.2/libmodelsplugin_debug.prl:
 ../../Qt/5.15.9/ios/qml/QtQml/WorkerScript.2/libworkerscriptplugin_debug.prl:
+../../Qt/5.15.9/ios/qml/QtQuick/Layouts/libqquicklayoutsplugin_debug.prl:
 ../../Qt/5.15.9/ios/qml/QtQuick/Window.2/libwindowplugin_debug.prl:
 ../../Qt/5.15.9/ios/qml/QtDigitalAdvertising/libDigitalAdvertising_debug.prl:
+../../Qt/5.15.9/ios/qml/QtQuick/Controls.2/libqtquickcontrols2plugin_debug.prl:
+../../Qt/5.15.9/ios/qml/QtQuick/Templates.2/libqtquicktemplates2plugin_debug.prl:
 ../../Qt/5.15.9/ios/qml/QtQuick/Controls.2/Material/libqqc2materialstyleplugin_debug.prl:
 ../../Qt/5.15.9/ios/qml/QtMultimedia/libdeclarative_multimedia_debug.prl:
+../../Qt/5.15.9/ios/qml/QtQuick/Dialogs/libdialogplugin_debug.prl:
+../../Qt/5.15.9/ios/qml/Qt/labs/folderlistmodel/libqmlfolderlistmodelplugin_debug.prl:
+../../Qt/5.15.9/ios/qml/Qt/labs/settings/libqmlsettingsplugin_debug.prl:
+../../Qt/5.15.9/ios/qml/QtQuick/Dialogs/Private/libdialogsprivateplugin_debug.prl:
+../../Qt/5.15.9/ios/qml/QtQuick/Controls/libqtquickcontrolsplugin_debug.prl:
+../../Qt/5.15.9/ios/qml/QtQuick/PrivateWidgets/libwidgetsplugin_debug.prl:
 ../../Qt/5.15.9/ios/qml/QtQuick/Controls.2/Fusion/libqtquickcontrols2fusionstyleplugin_debug.prl:
 ../../Qt/5.15.9/ios/qml/QtQuick/Controls.2/Universal/libqtquickcontrols2universalstyleplugin_debug.prl:
 ../../Qt/5.15.9/ios/qml/QtQuick/Controls.2/Imagine/libqtquickcontrols2imaginestyleplugin_debug.prl:

@@ -105,7 +105,7 @@ Rectangle {
             label.font.bold = true;
             qt_logo.visible = false
             toolbar.visible = false
-            stackView.push("InterstitialView.qml")
+            stackView.push("InterstitialAdView.qml")
         } else {
             label.color = "white";
             label.text = "Try Again :(";
@@ -113,7 +113,7 @@ Rectangle {
                 sudoku_checks = 0
                 qt_logo.visible = false
                 toolbar.visible = false
-                stackView.push("InterstitialView.qml")
+                stackView.push("InterstitialAdView.qml")
             } else {
                 sudoku_checks++
             }

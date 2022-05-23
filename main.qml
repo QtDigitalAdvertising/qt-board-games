@@ -1,8 +1,8 @@
-import QtQuick 2.5
-import QtQuick.Window 2.2
+import QtQuick 2.12
+import QtQuick.Window 2.12
 import QtDigitalAdvertising 1.1
-import QtQuick.Controls 2.2
-import QtQuick.Controls.Material 2.3
+import QtQuick.Controls 2.12
+import QtQuick.Controls.Material 2.12
 import QtQuick.Layouts 1.15
 
 ApplicationWindow {
@@ -25,59 +25,58 @@ ApplicationWindow {
        siteId: "<SITE ID GOES HERE>"
        appName: "Board Games"
        bundleId: "io.qt.boardgames"
-   }
+    }
 
     header: ToolBar {
+
         id: toolbar
-        Material.foreground: "#41CD52"
-        Material.background: "#41CD52"
-        Material.accent: "#41CD52"
 
-        RowLayout{
-            anchors.leftMargin: 10
-            anchors.topMargin: 10
+        background: Rectangle {
+            implicitHeight: 40
+            color: "#41CD52"
 
-            Item{
-                height: 40
-                width: 40
+            Rectangle {
+                width: parent.width
+                height: 1
+                anchors.bottom: parent.bottom
+                color: "transparent"
+                border.color: "#21be2b"
+            }
+        }
 
-                Image {
-                    id: mainButton
-                    anchors.fill: parent
-                    fillMode: Image.PreserveAspectFit
-                    source: "qrc:/images/menu.png"
+        RowLayout {
+            anchors.fill: parent
 
-                    MouseArea{
+            ToolButton {
+                contentItem:  Item{
+                    height: 40
+                    width: 40
+                    Image {
                         anchors.fill: parent
-                        onClicked: {
-                            if (stackView.depth > 1) {
-                                stackView.pop()
-                            } else {
-                                drawer.open()
-                            }
-                        }
+                        fillMode: Image.PreserveAspectFit
+                        source: "qrc:/images/menu.png"
                     }
                 }
+                onClicked: {
+                    if (stackView.depth > 1) {
+                        stackView.pop()
+                    } else {
+                        drawer.open()
+                    }
+               }
             }
-            Item{
-               width:2
-            }
-
-
             Label {
-                id: toolbarLabel
-                text: {
-                    return "Games made with Qt"
-                }
-                color: "white"
-                font.pixelSize: 22
-            }
-
-            Item{
+                text: "Games made with Qt"
+                elide: Label.ElideRight
+                horizontalAlignment: Qt.AlignHCenter
+                verticalAlignment: Qt.AlignVCenter
                 Layout.fillWidth: true
+                color: "white"
+                font.pixelSize: 20
             }
         }
     }
+
 
     CustomDrawer {
         id: drawer
@@ -106,4 +105,5 @@ ApplicationWindow {
         initialItem:  TicTacToeGame{}
     }
 
+    ConsentDialog { anchors.fill: parent }
 }
