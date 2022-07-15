@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<manifest package="io.qt.boardgames" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0.0" android:versionCode="1" android:installLocation="auto">
+<manifest package="io.qt.boardgames" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0.1" android:versionCode="2" android:installLocation="auto">
     <!-- The following comment will be replaced upon deployment with default permissions based on the dependencies of the application.
          Remove the comment if you do not require these default permissions. -->
 
@@ -9,8 +9,8 @@
     <!-- %%INSERT_FEATURES -->
 
     <supports-screens android:largeScreens="true" android:normalScreens="true" android:anyDensity="true" android:smallScreens="true"/>
-    <application android:hardwareAccelerated="true" android:name="org.qtproject.qt5.android.bindings.QtApplication" android:label="Qt Board Games" android:extractNativeLibs="true" android:allowNativeHeapPointerTagging="false" android:icon="@drawable/icon">
-        <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation|mcc|mnc|density" android:name="org.qtproject.qt5.android.bindings.QtActivity" android:label="Qt Board Games" android:screenOrientation="unspecified" android:launchMode="singleTop">
+    <application android:hardwareAccelerated="true" android:name="org.qtproject.qt5.android.bindings.QtApplication" android:label="Board Games" android:extractNativeLibs="true" android:allowNativeHeapPointerTagging="false" android:icon="@drawable/icon" android:networkSecurityConfig="@xml/network_security_config">
+        <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation|mcc|mnc|density" android:name="org.qtproject.qt5.android.bindings.QtActivity" android:label="Board Games" android:screenOrientation="unspecified" android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

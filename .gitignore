@@ -73,6 +73,9 @@ Thumbs.db
 
 # custom
 build
+keystore
+.xcode
+Release-iphoneos
 
 
 # C++ objects and libs
