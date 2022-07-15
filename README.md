@@ -25,10 +25,12 @@ MobileConfig {
     siteId: "<SITE ID GOES HERE>"
     appName: "Board Games"
     bundleId: "io.qt.boardgames"
+    dnt: "true|false"   // "Do Not Track" - it's usually set via a switch in the app that grants the usser the option 
+                        // to allow or to deny the app to track any personal data, usually for personalized ads
 }
 ```
 
-Now navigate to each *Game* file and to the *IntertistialView* and modify the *formatId* and *pageId* with your own
+Now navigate to the *BannerAdView* and to the *IntertistialView* files, and modify the *formatId* and *pageId* with your own
 
 ```
 pageId: "<PAGE ID GOES HERE>"
