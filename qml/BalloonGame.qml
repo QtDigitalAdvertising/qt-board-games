@@ -27,15 +27,6 @@ Item {
                 parent.visible = false;
             }
         }
-        BannerAdView {
-            height: 60
-            Layout.fillWidth: true
-            anchors {
-                left: parent.left
-                right: parent.right
-                bottom: parent.bottom
-            }
-        }
     }
 
     Item {
@@ -54,15 +45,6 @@ Item {
             anchors.fill: parent
             onClicked: {//Game Start
                 parent.visible = false;
-            }
-        }
-        BannerAdView {
-            height: 60
-            Layout.fillWidth: true
-            anchors {
-                left: parent.left
-                right: parent.right
-                bottom: parent.bottom
             }
         }
     }

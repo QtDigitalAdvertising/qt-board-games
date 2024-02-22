@@ -1,8 +1,8 @@
-import QtQuick 2.12
-import QtQuick.Window 2.12
-import QtDigitalAdvertising 1.1
-import QtQuick.Controls 2.12
-import QtQuick.Controls.Material 2.12
+import QtQuick 2.15
+import QtQuick.Window 2.15
+import QtDigitalAdvertising 2.0
+import QtQuick.Controls 2.2
+import QtQuick.Controls.Material 2.2
 import QtQuick.Layouts 1.15
 
 ApplicationWindow {
@@ -19,31 +19,6 @@ ApplicationWindow {
 
     minimumWidth: 670
     minimumHeight: 750
-
-    MobileConfig {
-        id: mobileConfig
-        qdaApiKey: "<API KEY GOES HERE>"
-        networkId: "4147"
-        appName: "Board Games"
-        bundleId: "io.qt.boardgames"
-        dnt: settings.boolValue("trackUserData", true) === false
-        siteId: {
-            switch (Qt.platform.os) {
-                case "windows": return "<WINDOWS SITE ID GOES HERE>"
-                case "osx": return "<MACOS SITE ID GOES HERE>"
-                case "ios": return "<IOS SITE ID GOES HERE>"
-                default: return "<ANDROID SITE ID GOES HERE>" // default android
-            }
-        }
-        Component.onCompleted: {
-            // is a one-time request to authorize or deny access to app-related data that can be used for tracking the user or the device
-            // it's mandatory offer the best ads experience.
-            // see https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/3547037-requesttrackingauthorizationwith
-            if(Qt.platform.os==="ios" || Qt.platform.os==="osx"){
-                mobileConfig.requestTrackingAuthorization()
-            }
-        }
-    }
 
     header: CustomToolbar {
         id: toolbar
@@ -76,23 +51,155 @@ ApplicationWindow {
         initialItem: TicTacToeGame{}
     }
 
-    ConsentDialog { anchors.fill: parent }
-
-    BannerAdView {
-        id: bannedAd
-        height: 60
+    Rectangle {
+        id: bannerBackground
+        height: 50
         Layout.fillWidth: true
+
+        opacity: 0.1
+
         anchors {
             left: parent.left
             right: parent.right
             bottom: parent.bottom
         }
+
+        visible: bannerAd.visible
+
+        BannerAd {
+            id: bannerAd
+
+            width: root.width
+            height: root.height
+
+            y: bannerBackground.y + bannerBackground.height/1.2
+            x: bannerBackground.x + bannerBackground.width/14
+
+            adUnitId: "/6499/example/banners"
+            bannerType: BannerAd.BANNER
+            testDevicesIds: [""]
+
+            state: "UNKNOWN"
+
+            Component.onCompleted: {
+                showBannerAd()
+            }
+
+            Connections{
+                target: bannerAd
+                function onLoading() {
+                    bannerAd.state = "LOADING"
+                    console.log("QDA: BannerAd loading")
+                }
+                function onLoaded() {
+                    bannerAd.state = "READY"
+                    console.log("QDA: BannerAd loaded")
+                }
+                function onClicked() {
+                    console.log("QDA: BannerAd clicked")
+                }
+                function onClosed() {
+                    bannerAd.state = "CLOSED"
+                    console.log("QDA: BannerAd closed")
+                }
+                function onLoadError(errorId) {
+                    bannerAd.state = "ERROR"
+                    console.log("QDA: BannerAd error " + errorId)
+                }
+            }
+
+            //You can apply visual efects that fit your UI
+            //No size animation allowed.
+            Behavior on opacity {
+                NumberAnimation {
+                    duration: 1000
+                }
+            }
+
+            //Custom states which fits your UI needs
+            states: [
+                State {
+                    name: "READY"
+                    PropertyChanges {
+                        target: bannerAd;
+                        visible: true;
+                        opacity: 1; //Opacity animation allowed
+                    }
+                }, State {
+                    name: "CLOSED"
+                    PropertyChanges {
+                        target: bannerAd;
+                        visible: false;
+                        opacity: 0; //Opacity animation allowed
+                    }
+                }
+            ]
+        }
+
+        MouseArea {
+            anchors.fill: parent
+            acceptedButtons: Qt.MiddleButton | Qt.RightButton
+            onPressed: {
+                console.log("BannerAd clickled.")
+                if (mouse.button === Qt.RightButton) {
+                    console.log("BannerAd right-clickled.")
+                    mouse.accepted = true
+                }
+            }
+        }
+    }
+
+    InterstitialAd {
+        id: interstitialAd
+
+        adUnitId: "/6499/example/interstitial"
+        testDevicesIds: ["123","4321"]
+
+        state: "CLOSED"
+
+        Connections{
+            target: interstitialAd
+
+            function onLoading() {
+                interstitialAd.state = "LOADING"
+                console.log("QDA: InterstitialAd loading")
+            }
+            function onClicked() {
+                console.log("QDA: InterstitialAd clicked")
+            }
+            function onLoadError(errorId) {
+                interstitialAd.state = "ERROR"
+                console.log("QDA: InterstitialAd error " + errorId)
+            }
+            function onLoaded()  {
+                interstitialAd.state = "READY"
+                console.log("QDA: InterstitialAd loaded")
+            }
+            function onClosed()  {
+                interstitialAd.state = "CLOSED"
+                console.log("QDA: InterstitialAd closed")
+            }
+        }
+    }
+
+    function showBannerAd() {
+        console.log("QDA: show BannerAd state: " + bannerAd.state)
+        bannerAd.show()
+    }
+
+    function loadInterstialAd() {
+        console.log("QDA: load InterstitialAd state: " + interstitialAd.state)
+        if (interstitialAd.state === "CLOSED" ||
+                interstitialAd.state === "ERROR") {
+            interstitialAd.load()
+        }
     }
 
     function showInterstitialAd() {
-        bannedAd.visible = false
-        qtLogo.visible = false
-        toolbar.visible = false
-        stackView.push("InterstitialAdView.qml")
+        console.log("QDA: show InterstitialAd state: " + interstitialAd.state)
+        if (interstitialAd.state === "READY" ||
+                interstitialAd.state === "LOADING") {
+            interstitialAd.show()
+        }
     }
 }

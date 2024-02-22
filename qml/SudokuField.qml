@@ -92,7 +92,8 @@ Rectangle {
         height: parent.cellBorderWidth * 5
     }
 
-    function check(){
+    function check() {
+        loadInterstialAd()
         var k = 0;
         for(var i = 0; i < 9; i++){
             for(var j = 0; j < 9; j++){

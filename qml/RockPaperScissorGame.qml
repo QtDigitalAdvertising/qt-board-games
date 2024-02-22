@@ -86,6 +86,7 @@ Item {
     }
 
     function doTheMath(myResult) {
+        loadInterstialAd()
         let computerResult = RockPaperScissor.getComputerResult();
 
         if (computerResult === myResult) {

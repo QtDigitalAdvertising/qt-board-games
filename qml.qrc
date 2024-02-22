@@ -3,27 +3,18 @@
         <file>qml/main.qml</file>
         <file>qml/CustomDrawer.qml</file>
         <file>qml/CustomToolbar.qml</file>
-        <file>qml/ConsentDialog.qml</file>
-        <!-- Ads Views -->
-        <file>qml/InterstitialAdView.qml</file>
-        <file>qml/BannerAdView.qml</file>
-        <!-- Tic Tac Toe Game -->
         <file>qml/TicTacToeSquare.qml</file>
         <file>qml/TicTacToeGame.qml</file>
         <file>qml/TicTacToeScoreBoard.qml</file>
-        <!-- Sudoku Game -->
         <file>qml/SudokuField.qml</file>
         <file>qml/SudokuCell.qml</file>
         <file>qml/SudokuGame.qml</file>
-        <!-- Rock Paper Scissor Game -->
         <file>qml/RockPaperScissorGame.qml</file>
         <file>qml/RockPaperScissorScoreBoard.qml</file>
         <file>qml/RockPaperScissorBadge.qml</file>
         <file>tools/RockPaperScissor.js</file>
-        <!-- Ballon Particle game ~NOT FUNCTIONAL YET~ -->
         <file>qml/BallonParticleSystem.qml</file>
         <file>qml/BalloonGame.qml</file>
-        <!-- Images resources -->
         <file>images/close.png</file>
         <file>images/menu.png</file>
         <file>images/builtwithqtrect.png</file>
