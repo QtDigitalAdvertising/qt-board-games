@@ -93,7 +93,7 @@ Rectangle {
     }
 
     function check() {
-        loadInterstialAd()
+        loadRewardedAd()
         var k = 0;
         for(var i = 0; i < 9; i++){
             for(var j = 0; j < 9; j++){
@@ -106,13 +106,13 @@ Rectangle {
             label.text = "Winner";
             label.color = "purple";
             label.font.bold = true;
-            showInterstitialAd()
+            showRewardedAd()
         } else {
             label.color = "white";
             label.text = "Try Again :(";
             if (sudokuChecks > 4) {
                 sudokuChecks = 0
-                showInterstitialAd()
+                showRewardedAd()
             } else {
                 sudokuChecks++
             }

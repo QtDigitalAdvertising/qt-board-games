@@ -69,20 +69,17 @@ ApplicationWindow {
         BannerAd {
             id: bannerAd
 
-            width: root.width
-            height: root.height
+            anchors.horizontalCenter: parent.horizontalCenter
 
-            y: bannerBackground.y + bannerBackground.height/1.2
-            x: bannerBackground.x + bannerBackground.width/14
-
-            adUnitId: "/6499/example/banners"
+            adUnitId: "/6499/example/banner"
             bannerType: BannerAd.BANNER
             testDevicesIds: [""]
 
             state: "UNKNOWN"
 
             Component.onCompleted: {
-                showBannerAd()
+                console.log("QDA: BannerAd trigger show")
+                bannerAd.show()
             }
 
             Connections{
@@ -182,9 +179,40 @@ ApplicationWindow {
         }
     }
 
-    function showBannerAd() {
-        console.log("QDA: show BannerAd state: " + bannerAd.state)
-        bannerAd.show()
+    RewardedAd {
+        id: rewardedAd
+
+        adUnitId: "/21775744923/example/rewarded_interstitial"
+        testDevicesIds: ["123","4321"]
+
+        state: "CLOSED"
+
+        Connections{
+            target: rewardedAd
+
+            function onLoading() {
+                rewardedAd.state = "LOADING"
+                console.log("QDA: RewardedAd loading")
+            }
+            function onClicked() {
+                console.log("QDA: RewardedAd clicked")
+            }
+            function onLoadError(errorId) {
+                rewardedAd.state = "ERROR"
+                console.log("QDA: RewardedAd error " + errorId)
+            }
+            function onRewarded(type, amount)  {
+                console.log("QDA: RewardedAd, type: "+ type +", amount:" + amount)
+            }
+            function onLoaded()  {
+                rewardedAd.state = "READY"
+                console.log("QDA: RewardedAd loaded")
+            }
+            function onClosed()  {
+                rewardedAd.state = "CLOSED"
+                console.log("QDA: RewardedAd closed")
+            }
+        }
     }
 
     function loadInterstialAd() {
@@ -200,6 +228,22 @@ ApplicationWindow {
         if (interstitialAd.state === "READY" ||
                 interstitialAd.state === "LOADING") {
             interstitialAd.show()
+        }
+    }
+
+    function loadRewardedAd() {
+        console.log("QDA: load RewardedAd state: " + rewardedAd.state)
+        if (rewardedAd.state === "CLOSED" ||
+                rewardedAd.state === "ERROR") {
+            rewardedAd.load()
+        }
+    }
+
+    function showRewardedAd() {
+        console.log("QDA: show RewardedAd state: " + rewardedAd.state)
+        if (rewardedAd.state === "READY" ||
+                rewardedAd.state === "LOADING") {
+            rewardedAd.show()
         }
     }
 }

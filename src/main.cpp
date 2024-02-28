@@ -10,19 +10,10 @@
 #include <QtPlugin>
 #include <qglobal.h>
 #include "settings.h"
-
-#if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
-    #include "digitaladvertising.h"
-    Q_IMPORT_PLUGIN(DigitalAdvertising)
-#endif
+#include "trackinghelper.h"
 
 int main(int argc, char *argv[])
 {
-
-    #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
-        DigitalAdvertising::initialize();
-    #endif
-
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QGuiApplication app(argc, argv);
 
@@ -38,6 +29,8 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("settings", settings);
 
     engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
+
+    TrackingHelper::requestConsent();
 
     return app.exec();
 }

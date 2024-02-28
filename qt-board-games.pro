@@ -4,8 +4,7 @@ QT += qml quick widgets quickcontrols2
 CONFIG += c++11
 CONFIG+=sdk_no_version_check
 
-HEADERS += \
-    src/settings.h
+HEADERS += src/settings.h
 SOURCES += src/main.cpp \
     src/settings.cpp
 
@@ -20,7 +19,10 @@ ios {
     QMAKE_INFO_PLIST = $$PWD/Info.plist
     OTHER_FILES += $$QMAKE_INFO_PLIST
 
-    HEADERS += src/digitaladvertising.h
+    HEADERS += \
+        src/trackinghelper.h
+    SOURCES += \
+        src/trackinghelper.mm
 
     ios:QMAKE_CXXFLAGS += -fobjc-arc
     ios:LIBS += -F $$PWD/3rdparty/ -framework FBLPromises \
@@ -47,6 +49,7 @@ ios {
                 -framework CoreMotion \
                 -framework CoreVideo \
                 -framework JavaScriptCore \
+                -framework AppTrackingTransparency \
                 -ObjC \
 }
 
