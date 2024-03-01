@@ -29,6 +29,5 @@ void Settings::setValueIfNotSet(const QString &key, const QVariant &value) {
 }
 
 void Settings::initToDefaults() {
-    setValueIfNotSet("isDataConsentGiven", true);
     setValueIfNotSet("trackUserData", true);
 }

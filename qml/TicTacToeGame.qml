@@ -95,6 +95,7 @@ Item {
     }
 
     function endGame() {
+        loadInterstialAd()
         resetArea.enabled = true;
         turn = player1;
         if (gamesPlayed > 8) {

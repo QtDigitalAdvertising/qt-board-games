@@ -1,19 +1,10 @@
-import QtQuick 2.12
-import QtQuick.Controls 2.12
+import QtQuick 2.15
+import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.15
 import Qt.labs.platform 1.1
 
 Drawer {
     id: drawer
-
-    MessageDialog {
-        id: confirmDialog
-        text: "Are you sure?"
-        informativeText: "This allows the app to provide you with a better ads experience."
-        buttons: MessageDialog.Yes | MessageDialog.Cancel
-        onAccepted: settings.setValue("trackUserData", adsSwitch.checked)
-        onRejected: adsSwitch.checked = true
-    }
 
     ColumnLayout {
         anchors.leftMargin: 10
@@ -59,20 +50,6 @@ Drawer {
         }
 
         Item {  height: 250 }
-
-        Switch {
-            id: adsSwitch
-            text: qsTr("Share Data For Personalized Ads")
-            checked: settings.boolValue("trackUserData", true) === true
-            Layout.alignment: Qt.AlignLeft | Qt.AlignBottom
-            onClicked: {
-                if (adsSwitch.checked == false) {
-                    confirmDialog.visible = true
-                } else {
-                    settings.setValue("trackUserData", true)
-                }
-            }
-        }
 
         Label {
             text: "Terms or Service"
