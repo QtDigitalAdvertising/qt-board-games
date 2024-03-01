@@ -10,7 +10,10 @@
 #include <QtPlugin>
 #include <qglobal.h>
 #include "settings.h"
+
+#if defined(Q_OS_IOS)
 #include "trackinghelper.h"
+#endif
 
 int main(int argc, char *argv[])
 {
@@ -30,7 +33,9 @@ int main(int argc, char *argv[])
 
     engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
 
-    TrackingHelper::requestConsent();
+    #if defined(Q_OS_IOS)
+        TrackingHelper::requestConsent();
+    #endif
 
     return app.exec();
 }
