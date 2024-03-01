@@ -21,7 +21,6 @@ Use the QtCreator and open the `qt-board-games.pro` or open the `qt-board-games.
 3. _ios only_: Don't forget that `iOS` requires the [google ads library](https://developers.google.com/admob/ios/download). Check the `3rdparty` folder and the `qt-board-games.pro` file to understand how we use those. Be careful which ones you use, because the ones for simulator is different than the one for real devices.
 4. _ios only_: Don't forget to have your `PrivacyInfo.xcprivacy`. You'll find one in this example. (More details can be found here: [link1](https://developer.apple.com/news/?id=av1nevon), [link2](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests?language=objc), [link3](https://developer.apple.com/support/third-party-SDK-requirements/)
 
-
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
